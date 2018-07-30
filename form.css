@@ -8,7 +8,7 @@ div.tableContainer {
 div.tableRow {
     display: table-row;
 }
-div.tableRow label {
+div.tableRow label.formLeftCol {
     padding-top: 4px;
     display: table-cell;
     text-align: right;

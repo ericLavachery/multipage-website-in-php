@@ -1,4 +1,5 @@
 <?php
+// variable pour que les includes sachent dans quel page ils sont (servira pour le menu)
 $teou = 'contact';
 ?>
 
