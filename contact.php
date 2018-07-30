@@ -7,11 +7,12 @@ $teou = 'contact';
 <html lang="fr" dir="ltr">
     <head>
         <meta charset="utf-8">
-        <title></title>
+        <title>Contact | Melius</title>
         <link rel="stylesheet" href="form.css">
     </head>
     <body>
         <?php include 'form.php'; ?>
-
+        
+        <script src="custom-select.js" charset="utf-8"></script>
     </body>
 </html>

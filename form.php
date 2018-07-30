@@ -25,7 +25,7 @@
             </div>
             <div class="tableRow">
                 <label for="objet" class="formLeftCol">Objet: </label>
-                <select class="contentselect" name="objet" id="objet">
+                <select class="contentSelect" name="objet" id="objet">
                     <option value=""></option>
                     <option value="info">Demande d'information</option>
                     <option value="inscription">Inscription</option>
