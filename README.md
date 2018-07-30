@@ -8,7 +8,7 @@ m'envoyer un mail via un formulaire de contact avec une petite photo."
 Pour avoir toutes les informations suivez le
 [lien](https://github.com/becodeorg/lovelace-2/tree/master/Projects/multipage-website-in-php).
 
-##Status
+## Status
 Progression : En cours
 Debuté le : Lundi 30 juillet 2018
 Fin prévue le : Mardi 7 août 2018
@@ -22,7 +22,7 @@ Fin prévue le : Mardi 7 août 2018
 * [ ] CSS Responsive sur base d'un framework
 * [ ] score d'au moins 80/100 au Lighthouse Test
 ## Liste des objectifs d'apprentissage
-* groupe
+* Groupe
 * [ ] Agile (manipulation tableau kanban) + tenue quotidienne du planning du groupe
 * [ ] Etre le capitaine du repos, qui gère les merge et les conflits
 * [ ] Rédaction d'un readme complet et professionnel
@@ -42,7 +42,7 @@ Fin prévue le : Mardi 7 août 2018
 * [ ] Afficher les erreurs à proximité des champs concernés
 * [ ] maitriser le déploiement sur Heroku
 
-##Difficultés
+## Difficultés
 * Travail en équipe
 * Mise en place du planning du travail
 * Mise en place d'une méthode de travail
