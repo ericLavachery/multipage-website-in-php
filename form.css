@@ -1,0 +1,19 @@
+legend {
+    font-weight: bold;
+}
+div.tableContainer {
+    display: table;
+    border-spacing: 5px;
+}
+div.tableRow {
+    display: table-row;
+}
+div.tableRow label {
+    padding-top: 4px;
+    display: table-cell;
+    text-align: right;
+    vertical-align: top;
+}
+div.tableRow input {
+    display: table-cell;
+}
