@@ -9,8 +9,8 @@ Pour avoir toutes les informations suivez le
 [lien](https://github.com/becodeorg/lovelace-2/tree/master/Projects/multipage-website-in-php).
 
 ## Status
-Progression : En cours
-Debuté le : Lundi 30 juillet 2018
+Progression : En cours &nbsp;
+Debuté le : Lundi 30 juillet 2018 &nbsp;
 Fin prévue le : Mardi 7 août 2018
 
 ## Cahiers des charges
