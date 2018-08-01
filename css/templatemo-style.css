@@ -276,13 +276,15 @@ p:last-child { margin-bottom: 0; }
 
 .letitre {
 	padding-top: 18px;
+	padding-bottom: 0;
+	margin-bottom: 0;
 }
 
 .tm-contact-form-left {	padding-right: 0; }
 
 .tm-contact-form-right { padding-right: 0; }
 
-.tm-contact-form-end { padding-right: 0; }
+.tm-contact-form-full { padding-right: 0; }
 
 .form-control::-webkit-input-placeholder { /* Chrome/Opera/Safari */
   	color: rgba(255,255,255,0.75);
