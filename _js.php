@@ -23,10 +23,10 @@ $(document).ready(function(){
         navbarHeight = smallNavbarHeight;
     }
 
-    $('#tmNavbar').singlePageNav({
-        'currentClass' : "active",
-        offset : navbarHeight
-    });
+    // $('#tmNavbar').singlePageNav({
+    //     'currentClass' : "active",
+    //     offset : navbarHeight
+    // });
 
 
     /* Collapse menu after click */
@@ -42,10 +42,10 @@ $(document).ready(function(){
             navbarHeight = bigNavbarHeight;
         }
 
-        $('#tmNavbar').singlePageNav({
-            'currentClass' : "active",
-            offset : navbarHeight
-        });
+        // $('#tmNavbar').singlePageNav({
+        //     'currentClass' : "active",
+        //     offset : navbarHeight
+        // });
     });
 
     /*  Scroll to top */
@@ -57,4 +57,7 @@ $(document).ready(function(){
     });
 
 });
+
+var ww = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
+console.log(ww);
 </script>

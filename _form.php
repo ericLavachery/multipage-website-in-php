@@ -9,7 +9,7 @@
                 <nobr><input type="radio" name="titre" id="Mr" value="Mr"><label for="Mr">Mr &nbsp;</label></nobr>
             </div>
         </div>
-        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-12 col-xl-6 tm-contact-form-left">
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 tm-contact-form-left">
             <div class="form-group">
                 <input type="text" id="prenom" name="prenom" class="form-control" placeholder="Prénom :"  required/>
             </div>
@@ -27,7 +27,7 @@
                 </select>
             </div>
         </div>
-        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-12 col-xl-6 tm-contact-form-right">
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 tm-contact-form-right">
             <div class="form-group">
                 <textarea id="message" name="message" class="form-control" rows="9" placeholder="Message :" required></textarea>
             </div>
