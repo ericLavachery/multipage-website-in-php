@@ -1,5 +1,5 @@
 <?php
-$teou = 'plus';
+$teou = 'Melius plus';
 include '_head.php';
 ?>
 <body>

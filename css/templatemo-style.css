@@ -68,7 +68,7 @@ p:last-child { margin-bottom: 0; }
     -webkit-align-items: center;
         -ms-flex-align: center;
             align-items: center;
-    padding: 40px;
+    padding: 30px;
     z-index: 1000;
 }
 
@@ -99,8 +99,7 @@ p:last-child { margin-bottom: 0; }
 	/*display: inline-block;*/
 	font-size: 3em;
 	margin: 0;
-    text-transform: uppercase;
-    padding: 0.56em 1.3em;
+    padding: 0.3em 1.0em;
     border: 1px solid white;
 }
 

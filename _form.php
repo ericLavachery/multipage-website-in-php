@@ -1,48 +1,44 @@
-<form enctype="multipart/form-data" method="post" action="contact.php">
-    <fieldset>
-        <legend>Contact</legend>
-        <div class="tableContainer">
-            <div class="tableRow">
-                <label for="task" class="formLeftCol">Titre: </label>
+<div class="col-xs-12 col-sm-6 col-md-6 col-lg-5 col-xl-6 tm-contact-left">
+    <h2 class="tm-section-header thin-font col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">Contactez-nous</h2>
+
+    <form action="contact.php" method="post" class="contact-form">
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-12 col-xl-6 tm-contact-form-left">
+            <div class="form-group letitre">
                 <input type="radio" name="titre" id="Mme" value="Mme">
-                <label for="Mme">Mme</label>
+                <label for="Mme">Mme &nbsp;&nbsp;</label>
                 <input type="radio" name="titre" id="Melle" value="Melle">
-                <label for="Melle">Melle</label>
+                <label for="Melle">Melle &nbsp;&nbsp;</label>
                 <input type="radio" name="titre" id="Mr" value="Mr">
-                <label for="Mr">Mr</label>
+                <label for="Mr">Mr &nbsp;&nbsp;</label>
             </div>
-            <div class="tableRow">
-                <label for="nom" class="formLeftCol">Nom: </label>
-                <input type="text" name="nom" id="nom">
+            <div class="form-group">
+                <input type="text" id="prenom" name="prenom" class="form-control" placeholder="Prénom :"  required/>
             </div>
-            <div class="tableRow">
-                <label for="prenom" class="formLeftCol">Prénom: </label>
-                <input type="text" nom="prenom" id="prenom">
+            <div class="form-group">
+                <input type="text" id="nom" name="nom" class="form-control" placeholder="Nom :"  required/>
             </div>
-            <div class="tableRow">
-                <label for="email" class="formLeftCol">Email: </label>
-                <input type="email" name="email" id="email">
+            <div class="form-group">
+                <input type="email" id="email" name="email" class="form-control" placeholder="Email :"  required/>
             </div>
-            <div class="tableRow">
-                <label for="objet" class="formLeftCol">Objet: </label>
-                <select class="contentSelect" name="objet" id="objet">
-                    <option value=""></option>
+            <div class="form-group">
+                <select class="form-control" name="objet" id="objet">
+                    <option value="">Objet :</option>
                     <option value="info">Demande d'information</option>
                     <option value="inscription">Inscription</option>
                 </select>
             </div>
-            <div class="tableRow">
-                <label for="message" class="formLeftCol">Votre message: </label>
-                <textarea name="message" id="message" rows="8" cols="80"></textarea>
-            </div>
-            <div class="tableRow">
-                <label for="document" class="formLeftCol">Document: </label>
-                <input type="file" name="document" id="documents">
-            </div>
-            <div class="tableRow">
-                <label for="submit" class="formLeftCol"></label>
-                <input type="button" id="submit" value="Envoyer">
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-12 col-xl-6 tm-contact-form-right">
+            <div class="form-group">
+                <textarea id="message" name="message" class="form-control" rows="10" placeholder="Message :" required></textarea>
             </div>
         </div>
-    </fieldset>
-</form>
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 tm-contact-form-end">
+            <div class="form-group">
+                <input type="file" id="document" name="document" class="form-control" placeholder="Document :">
+            </div>
+            <button type="submit" class="btn submit-btn" id="submit">Envoyer</button>
+        </div>
+    </form>    
+
+</div>

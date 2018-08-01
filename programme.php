@@ -1,5 +1,5 @@
 <?php
-$teou = 'programme';
+$teou = 'Programme';
 include '_head.php';
 ?>
 <body>

@@ -1,5 +1,5 @@
 <?php
-$teou = 'index';
+$teou = 'Accueil';
 include '_head.php';
 ?>
 <body>

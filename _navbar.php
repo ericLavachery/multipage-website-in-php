@@ -1,6 +1,6 @@
 <div class="row navbar-row">
     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 navbar-container">
-        <a href="javascript:void(0)" class="navbar-brand" id="go-to-top">Strip</a>
+        <a href="index.php" class="navbar-brand" id="go-to-top">Melius</a>
 
         <nav class="navbar navbar-full">
             <div class="collapse navbar-toggleable-md" id="tmNavbar">
@@ -9,10 +9,10 @@
                         <a class="nav-link" href="index.php">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="plus.php">Programme</a>
+                        <a class="nav-link" href="programme.php">Programme</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="activites.php">Activités</a>
+                        <a class="nav-link" href="plus.php">Melius plus</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="contact.php">Contact</a>
