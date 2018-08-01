@@ -56,8 +56,8 @@ p:last-child { margin-bottom: 0; }
 
 .navbar-row { position: relative; }
 .navbar-container {
-	background-color: #cc9900;
-	font-size: 1em;
+	background-color: #DD0028;
+	font-size: 0.85em;
 	position: absolute;
 	display: -webkit-flex;
 	display: -ms-flexbox;
@@ -79,7 +79,7 @@ p:last-child { margin-bottom: 0; }
 }
 
 .navbar-container.sticky {
-	background-color: rgba(204, 153, 0, 0.9);
+	background-color: rgba(221, 0, 40, 0.9);
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -125,12 +125,12 @@ p:last-child { margin-bottom: 0; }
 
 .navbar-nav .nav-link:hover,
 .navbar-nav .nav-link.active {
-	background-color: #9a6600;
+	background-color: #a1001d;
 	color: white;
 	text-decoration: none;
 }
 
-.tm-page-content { margin-top: 255px; }
+.tm-page-content { margin-top: 180px; }
 
 .tm-home-right {
 	padding: 100px 70px 100px 100px;
@@ -161,7 +161,8 @@ p:last-child { margin-bottom: 0; }
 #tm-section-3 {	background-image: url(img/strip-bg-03.jpg); }
 #tm-section-4 {	background-image: url(img/strip-bg-04.jpg); }
 .tm-footer {
-	background-image: url(img/strip-bg-05.jpg);
+    background-color: #DD0028;
+	/* background-image: url(img/strip-bg-05.jpg); */
 	font-weight: 300;
 	display: -webkit-flex;
 	display: -ms-flexbox;
@@ -342,7 +343,7 @@ p:last-child { margin-bottom: 0; }
 }
 
 .blue-text { color: #00599a; }
-.red-text { color: #882f33; }
+.red-text { color: #298227; }
 .gray-text { color: #333333; }
 .green-text {
 	color: #2A8885;
