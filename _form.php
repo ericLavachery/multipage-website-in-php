@@ -4,9 +4,9 @@
     <form action="contact.php" method="post" class="contact-form">
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 tm-contact-form-full">
             <div class="form-group letitre">
-                <nobr><input type="radio" name="titre" id="Mme" value="Mme"><label for="Mme">Mme &nbsp;</label></nobr>
-                <nobr><input type="radio" name="titre" id="Melle" value="Melle"><label for="Melle">Melle &nbsp;</label></nobr>
-                <nobr><input type="radio" name="titre" id="Mr" value="Mr"><label for="Mr">Mr &nbsp;</label></nobr>
+                <nobr><input type="radio" name="titre" id="Mme" value="Mme"> <label for="Mme">Mme &nbsp;</label></nobr>
+                <nobr><input type="radio" name="titre" id="Melle" value="Melle"> <label for="Melle">Melle &nbsp;</label></nobr>
+                <nobr><input type="radio" name="titre" id="Mr" value="Mr"> <label for="Mr">Mr &nbsp;</label></nobr>
             </div>
         </div>
         <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 tm-contact-form-left">
@@ -29,7 +29,7 @@
         </div>
         <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 tm-contact-form-right">
             <div class="form-group">
-                <textarea id="message" name="message" class="form-control" rows="9" placeholder="Message :" required></textarea>
+                <textarea id="message" name="message" class="form-control" rows="8" placeholder="Message :" required></textarea>
             </div>
         </div>
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 tm-contact-form-full">
