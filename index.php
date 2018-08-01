@@ -1,31 +1,76 @@
 <?php
-// variable pour que les includes sachent dans quel page ils sont (servira pour le menu)
 $teou = 'index';
+include '_head.php';
 ?>
-
-<!DOCTYPE html>
-<html lang="fr" dir="ltr">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <!-- jQuery library -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <!-- Latest compiled JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <!-- icon library for menu bars (and others things) -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="navbar.css">
-    <link rel="stylesheet" href="mq.css">
-    <title>Home | Melius</title>
-</head>
 <body>
-    <?php include 'navbar.php'; ?>
+    <div class="container tm-container">
+        <?php include '_navbar.php'; ?>
 
+        <!-- page content -->
+        <div class="tm-page-content">
 
+            <!-- #home -->
+            <section id="tm-section-1" class="row tm-section">
 
-    <script src="navbar.js" charset="utf-8"></script>
+                <div class="tm-white-curve-left col-xs-12 col-sm-12 col-md-12 col-lg-7 col-xl-6">
+                    <div class="tm-white-curve-left-rec"></div>
+                    <div class="tm-white-curve-left-circle"></div>
+                    <div class="tm-white-curve-text">
+                        <h2 class="tm-section-header blue-text">Introduction</h2>
+                        <p>
+                            Strip HTML5 template is another <a rel="nofollow" href="http://www.getbootstrap.com" target="_parent">Bootstrap</a> responsive layout for any kind of purpose. Please help us by telling your friends about templatemo. Praesent consectetur dictum massa eu tincidunt. Nulla facilisi. Nam tincidunt nec diam eget sollicitudin.
+                        </p>
+                        <p>
+                            Morbi nec felis rutrum, faucibus odio sed, ullamcorper risus. Sed id condimentum neque, at iaculis ex. Praesent faucibus viverra ante id auctor. Pellentesque at risus ut arcu blandit consectetur.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="tm-home-right col-xs-12 col-sm-12 col-md-12 col-lg-5 col-xl-6">
+                    <h2 class="tm-section-header">Our Mission</h2>
+                    <p class="thin-font">We provide 100% free responsive Bootstrap themes for everyone. No credit link is required to use our templates. Nulla ligula odio, consesquat sec justo ut, dictum tempus eros. Duis finibus pulvinar felis, at sollicitudin ante. Aliquam sed augue dui.</p>
+                </div>
+
+            </section>
+            <!-- #home -->
+            <!-- #programme -->
+            <section id="tm-section-2" class="row tm-section">
+                <div class="tm-flex-center col-xs-12 col-sm-6 col-md-6 col-lg-5 col-xl-6">
+                    <img src="img/strip-01.jpg" alt="Image" class="img-fluid tm-img">
+                </div>
+
+                <div class="tm-white-curve-right col-xs-12 col-sm-6 col-md-6 col-lg-7 col-xl-6">
+
+                    <div class="tm-white-curve-right-circle"></div>
+                    <div class="tm-white-curve-right-rec"></div>
+
+                    <div class="tm-white-curve-text">
+                        <h2 class="tm-section-header red-text">Our Services</h2>
+                        <p>Praesent consectetur dictum massa eu tincidunt. Nulla facilisi. Nam tincidunt nex diam eget sollicitudin. Quisque tincidunt ex sit amet metus ultricies, sed lobortis purus finibus.</p>
+                        <p class="thin-font">Morbi nex felis rutrum, faucibus odio sed, ullamcorper risus. Sed id condimentum nequq, at iaculis ex. Praesent faucibus viverra ante id auctor. Pellentesque at risus ut arcu blandit consectetur.</p>
+                    </div>
+
+                </div>
+            </section>
+            <!-- #programme -->
+
+            <?php include '_footer.php'; ?>
+
+        </div>
+        <!-- page content -->
+
+    </div>
+    <!-- .container -->
+
+    <!-- load JS files -->
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <!-- Tether for Bootstrap, http://stackoverflow.com/questions/34567939/how-to-fix-the-error-error-bootstrap-tooltips-require-tether-http-github-h -->
+    <script src="https://www.atlasestateagents.co.uk/javascript/tether.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Single Page Nav (https://github.com/ChrisWojcik/single-page-nav) -->
+    <!-- <script src="js/jquery.singlePageNav.min.js"></script> -->
+
+    <?php include '_js.php'; ?>
+
 </body>
 </html>
