@@ -6,16 +6,16 @@
             <div class="collapse navbar-toggleable-md" id="tmNavbar">
                 <ul class="nav navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="index.php">Home</a>
+                        <a class="nav-link<?php if ($teou == 'Accueil') {echo(' active');} ?>" href="index.php">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="programme.php">Programme</a>
+                        <a class="nav-link<?php if ($teou == 'Programme') {echo(' active');} ?>" href="programme.php">Programme</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="plus.php">Melius plus</a>
+                        <a class="nav-link<?php if ($teou == 'Melius plus') {echo(' active');} ?>" href="plus.php">Melius plus</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="contact.php">Contact</a>
+                        <a class="nav-link<?php if ($teou == 'Contact') {echo(' active');} ?>" href="contact.php">Contact</a>
                     </li>
                 </ul>
             </div>
