@@ -9,27 +9,6 @@ include '_head.php';
         <!-- page content -->
         <div class="tm-page-content">
 
-            <!-- #activites -->
-            <section id="tm-section-3" class="row tm-section">
-                <div class="tm-white-curve-left col-xs-12 col-sm-6 col-md-6 col-lg-7 col-xl-6">
-                    <div class="tm-white-curve-left-rec">
-
-                    </div>
-                    <div class="tm-white-curve-left-circle">
-
-                    </div>
-                    <div class="tm-white-curve-text">
-                        <h2 class="tm-section-header textcol-sec-3">About our company</h2>
-                        <p class="thin-font">Praesent consectetur dictum massa eu tincidunt. Nulla facilisi. Nam tincidunt nex diam eget sollicitudin. Quisque tincidunt ex sit amet metus ultricies, sed lobortis purus finibus.</p>
-                        <p>Morbi nex felis rutrum, faucibus odio sed, ullamcorper risus. Sed id condimentum nequq, at iaculis ex. Praesent faucibus viverra ante id auctor. Pellentesque at risus ut arcu blandit consectetur.</p>
-                    </div>
-
-                </div>
-                <div class="tm-flex-center col-xs-12 col-sm-6 col-md-6 col-lg-5 col-xl-6">
-                    <img src="img/strip-02.jpg" alt="Image" class="img-fluid tm-img">
-                </div>
-            </section>
-            <!-- #activites -->
             <!-- #contact -->
             <section id="tm-section-4" class="row tm-section">
 
@@ -42,20 +21,19 @@ include '_head.php';
 
                     <div class="tm-white-curve-text">
 
-                        <h2 class="tm-section-header textcol-sec-4">Contact Us</h2>
-                        <p>Quisque tincidunt ex sit amet metus ultricies, sed lobortis purus finibus. Morbi nex felis rutrum, faucibus odio sed, ullamcorper risus. Sed id condimentum nequq, at iaculis</p>
+                        <h2 class="tm-section-header textcol-sec-4">Contact</h2>
+                        <p class="thin-font"></p>
 
                         <h3 class="tm-section-subheader green-text">Our Address</h3>
                         <address>
-                            110-220 Praesent consectetur, Dictum massa 10550
+                            48 rue d'Oultremont, B - 1040 Bruxelles
                         </address>
-
                         <div class="contact-info-links-container">
                             <span class="green-text contact-info">
-                                Tel: <a href="tel:0100200340" class="contact-info-link">010-020-0340</a>
+                                Tel: <a href="tel:3227343149" class="contact-info-link">32.(0)2.734.31.49</a>
                             </span>
                             <span class="green-text contact-info">
-                                Email: <a href="mailto:info@company.com" class="contact-info-link">info@company.com</a>
+                                Email: <a href="mailto:info@melius.be" class="contact-info-link">info@melius.be</a>
                             </span>
                         </div>
                     </div>

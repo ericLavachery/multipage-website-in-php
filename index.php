@@ -17,12 +17,14 @@ include '_head.php';
                     <div class="tm-white-curve-left-circle"></div>
                     <div class="tm-white-curve-text">
                         <h2 class="tm-section-header textcol-sec-1">Formation en 1 an</h2>
-                        <ul>
-                            <li>Application concrète des techniques des affaires</li>
-                            <li>Utilisation performante des outils bureautiques</li>
-                            <li>Connaissance active des langues</li>
-                            <li>Ouverture sur le monde économique, politique et social</li>
-                        </ul>
+                        <p class="thin-font">
+                            <ul>
+                                <li>Application concrète des techniques des affaires</li>
+                                <li>Utilisation performante des outils bureautiques</li>
+                                <li>Connaissance active des langues</li>
+                                <li>Ouverture sur le monde économique, politique et social</li>
+                            </ul>
+                        </p>
                         <h2>&nbsp;</h2>
                         <h2 class="tm-section-header textcol-sec-1">3 axes</h2>
                         <ul>
@@ -48,7 +50,7 @@ include '_head.php';
 
             </section>
             <!-- #home -->
-            <!-- #programme -->
+            <!-- business game -->
             <section id="tm-section-2" class="row tm-section">
                 <div class="tm-flex-center col-xs-12 col-sm-6 col-md-6 col-lg-5 col-xl-6">
                     <img src="img/promo85.png" alt="Image" class="img-fluid tm-img">
@@ -61,13 +63,13 @@ include '_head.php';
 
                     <div class="tm-white-curve-text">
                         <h2 class="tm-section-header textcol-sec-2">Participez au Melius Business Game 2018</h2>
-                        <p>Praesent consectetur dictum massa eu tincidunt. Nulla facilisi. Nam tincidunt nex diam eget sollicitudin. Quisque tincidunt ex sit amet metus ultricies, sed lobortis purus finibus.</p>
-                        <p class="thin-font">Morbi nex felis rutrum, faucibus odio sed, ullamcorper risus. Sed id condimentum nequq, at iaculis ex. Praesent faucibus viverra ante id auctor. Pellentesque at risus ut arcu blandit consectetur.</p>
+                        <p>L’école se transformera en Business Centre ou co-work station hébergeant 3 PME virtuelles.</p>
+                        <p class="thin-font">Chaque PME aura mis en place un Business Model et devra répondre aux besoins des clients, choisir ses fournisseurs, conclure des contrats, tenir sa comptabilité, gérer une équipe, engager de nouveaux collaborateurs, se faire conseiller en externe par des consultants.</p>
                     </div>
 
                 </div>
             </section>
-            <!-- #programme -->
+            <!-- business game -->
 
             <?php include '_footer.php'; ?>
 

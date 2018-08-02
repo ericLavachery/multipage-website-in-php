@@ -16,19 +16,21 @@ include '_head.php';
                     <div class="tm-white-curve-left-rec"></div>
                     <div class="tm-white-curve-left-circle"></div>
                     <div class="tm-white-curve-text">
-                        <h2 class="tm-section-header textcol-sec-2">Introduction</h2>
-                        <p>
-                            Strip HTML5 template is another <a rel="nofollow" href="http://www.getbootstrap.com" target="_parent">Bootstrap</a> responsive layout for any kind of purpose. Please help us by telling your friends about templatemo. Praesent consectetur dictum massa eu tincidunt. Nulla facilisi. Nam tincidunt nec diam eget sollicitudin.
-                        </p>
-                        <p>
-                            Morbi nec felis rutrum, faucibus odio sed, ullamcorper risus. Sed id condimentum neque, at iaculis ex. Praesent faucibus viverra ante id auctor. Pellentesque at risus ut arcu blandit consectetur.
-                        </p>
+                        <h2 class="tm-section-header textcol-sec-2">Melius Plus, la clé pour relancer votre carrière</h2>
+                        <p class="thin-font">Vous avez 35 ans ou plus et, plus que tout, vous aspirez à changer de cap, à prendre un nouveau départ professionnel. Parce qu'il y a quelques années, vous avez abandonné votre carrière pour raisons personnelles. Ou parce que vous voulez changer radicalement de secteur et vous orienter vers le monde de l'entreprise. La formation Melius Plus vous aidera à relever ce défi.</p>
                     </div>
                 </div>
 
                 <div class="tm-home-right col-xs-12 col-sm-12 col-md-12 col-lg-5 col-xl-6">
-                    <h2 class="tm-section-header">Our Mission</h2>
-                    <p class="thin-font">We provide 100% free responsive Bootstrap themes for everyone. No credit link is required to use our templates. Nulla ligula odio, consesquat sec justo ut, dictum tempus eros. Duis finibus pulvinar felis, at sollicitudin ante. Aliquam sed augue dui.</p>
+                    <h2 class="tm-section-header">4 modules</h2>
+                    <p class="thin-font">
+                        <ul>
+                            <li>l'apprentissage des principes fondamentaux de gestion</li>
+                            <li>l'acquisition des compétences de base en bureautique</li>
+                            <li>la culture générale et l'actualité économique</li>
+                            <li>l'itinéraire pour l'emploi, un véritable coaching individualisé pour transformer en succès l'épreuve du recrutement</li>
+                        </ul>
+                    </p>
                 </div>
 
             </section>
@@ -36,7 +38,7 @@ include '_head.php';
             <!-- #programme -->
             <section id="tm-section-5" class="row tm-section">
                 <div class="tm-flex-center col-xs-12 col-sm-6 col-md-6 col-lg-5 col-xl-6">
-                    <img src="img/strip-01.jpg" alt="Image" class="img-fluid tm-img">
+                    <img src="img/92.jpg" alt="Image" class="img-fluid tm-img">
                 </div>
 
                 <div class="tm-white-curve-right col-xs-12 col-sm-6 col-md-6 col-lg-7 col-xl-6">
@@ -45,9 +47,8 @@ include '_head.php';
                     <div class="tm-white-curve-right-rec"></div>
 
                     <div class="tm-white-curve-text">
-                        <h2 class="tm-section-header textcol-sec-5">Our Services</h2>
-                        <p>Praesent consectetur dictum massa eu tincidunt. Nulla facilisi. Nam tincidunt nex diam eget sollicitudin. Quisque tincidunt ex sit amet metus ultricies, sed lobortis purus finibus.</p>
-                        <p class="thin-font">Morbi nex felis rutrum, faucibus odio sed, ullamcorper risus. Sed id condimentum nequq, at iaculis ex. Praesent faucibus viverra ante id auctor. Pellentesque at risus ut arcu blandit consectetur.</p>
+                        <h2 class="tm-section-header textcol-sec-5">Apprendre à apprendre</h2>
+                        <p class="thin-font">Notre objectif, c'est la mise à niveau de vos connaissances en gestion et bureautique par le développement de vos capacités d'apprentissage et de réflexion. Pour que vous puissiez vous repositionner rapidement sur le marché de l'emploi et réussir au mieux dans votre nouvel environnement professionnel.</p>
                     </div>
 
                 </div>
