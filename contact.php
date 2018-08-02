@@ -19,7 +19,7 @@ include '_head.php';
 
                     </div>
                     <div class="tm-white-curve-text">
-                        <h2 class="tm-section-header gray-text">About our company</h2>
+                        <h2 class="tm-section-header textcol-sec-3">About our company</h2>
                         <p class="thin-font">Praesent consectetur dictum massa eu tincidunt. Nulla facilisi. Nam tincidunt nex diam eget sollicitudin. Quisque tincidunt ex sit amet metus ultricies, sed lobortis purus finibus.</p>
                         <p>Morbi nex felis rutrum, faucibus odio sed, ullamcorper risus. Sed id condimentum nequq, at iaculis ex. Praesent faucibus viverra ante id auctor. Pellentesque at risus ut arcu blandit consectetur.</p>
                     </div>
@@ -34,7 +34,7 @@ include '_head.php';
             <section id="tm-section-4" class="row tm-section">
 
                 <?php include '_form.php'; ?>
-                
+
                 <div class="tm-white-curve-right col-xs-12 col-sm-6 col-md-6 col-lg-7 col-xl-6">
 
                     <div class="tm-white-curve-right-circle"></div>
@@ -42,7 +42,7 @@ include '_head.php';
 
                     <div class="tm-white-curve-text">
 
-                        <h2 class="tm-section-header green-text">Contact Us</h2>
+                        <h2 class="tm-section-header textcol-sec-4">Contact Us</h2>
                         <p>Quisque tincidunt ex sit amet metus ultricies, sed lobortis purus finibus. Morbi nex felis rutrum, faucibus odio sed, ullamcorper risus. Sed id condimentum nequq, at iaculis</p>
 
                         <h3 class="tm-section-subheader green-text">Our Address</h3>

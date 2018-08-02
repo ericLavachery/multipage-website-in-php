@@ -16,7 +16,7 @@ include '_head.php';
                     <div class="tm-white-curve-left-rec"></div>
                     <div class="tm-white-curve-left-circle"></div>
                     <div class="tm-white-curve-text">
-                        <h2 class="tm-section-header blue-text">Introduction</h2>
+                        <h2 class="tm-section-header textcol-sec-1">Introduction</h2>
                         <p>
                             Strip HTML5 template is another <a rel="nofollow" href="http://www.getbootstrap.com" target="_parent">Bootstrap</a> responsive layout for any kind of purpose. Please help us by telling your friends about templatemo. Praesent consectetur dictum massa eu tincidunt. Nulla facilisi. Nam tincidunt nec diam eget sollicitudin.
                         </p>
@@ -45,7 +45,7 @@ include '_head.php';
                     <div class="tm-white-curve-right-rec"></div>
 
                     <div class="tm-white-curve-text">
-                        <h2 class="tm-section-header red-text">Our Services</h2>
+                        <h2 class="tm-section-header textcol-sec-2">Our Services</h2>
                         <p>Praesent consectetur dictum massa eu tincidunt. Nulla facilisi. Nam tincidunt nex diam eget sollicitudin. Quisque tincidunt ex sit amet metus ultricies, sed lobortis purus finibus.</p>
                         <p class="thin-font">Morbi nex felis rutrum, faucibus odio sed, ullamcorper risus. Sed id condimentum nequq, at iaculis ex. Praesent faucibus viverra ante id auctor. Pellentesque at risus ut arcu blandit consectetur.</p>
                     </div>

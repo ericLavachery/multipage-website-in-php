@@ -155,11 +155,37 @@ p:last-child { margin-bottom: 0; }
 	height: 600px;
 }
 
+.textcol-sec-1 {
+    color: #00599a;
+    font-weight: 400;
+}
+.textcol-sec-2 {
+    color: #969901;
+    font-weight: 400;
+}
+.textcol-sec-3 {
+    color: #333333;
+    font-weight: 400;
+}
+.textcol-sec-4 {
+	color: #2A8885;
+	font-weight: 400;
+}
+.textcol-sec-5 {
+	color: #35882a;
+	font-weight: 400;
+}
+.textcol-sec-6 {
+	color: #882a85;
+	font-weight: 400;
+}
+#tm-section-1 {	background-image: url(img/strip-bg-01.jpg); } /* SKY */
+#tm-section-2 {	background-image: url(img/strip-bg-02.jpg); } /* YELLOW */
+#tm-section-3 {	background-image: url(img/strip-bg-03.jpg); } /* GREY */
+#tm-section-4 {	background-image: url(img/strip-bg-04.jpg); } /* CYAN */
+#tm-section-5 {	background-image: url(img/strip-bg-05.jpg); } /* GREEN */
+#tm-section-6 {	background-image: url(img/strip-bg-06.jpg); } /* PURPLE */
 
-#tm-section-1 {	background-image: url(img/strip-bg-01.jpg); }
-#tm-section-2 {	background-image: url(img/strip-bg-02.jpg); }
-#tm-section-3 {	background-image: url(img/strip-bg-03.jpg); }
-#tm-section-4 {	background-image: url(img/strip-bg-04.jpg); }
 .tm-footer {
     background-color: #DD0028;
 	/* background-image: url(img/strip-bg-05.jpg); */

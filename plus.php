@@ -10,13 +10,13 @@ include '_head.php';
         <div class="tm-page-content">
 
             <!-- #home -->
-            <section id="tm-section-1" class="row tm-section">
+            <section id="tm-section-2" class="row tm-section">
 
                 <div class="tm-white-curve-left col-xs-12 col-sm-12 col-md-12 col-lg-7 col-xl-6">
                     <div class="tm-white-curve-left-rec"></div>
                     <div class="tm-white-curve-left-circle"></div>
                     <div class="tm-white-curve-text">
-                        <h2 class="tm-section-header blue-text">Introduction</h2>
+                        <h2 class="tm-section-header textcol-sec-2">Introduction</h2>
                         <p>
                             Strip HTML5 template is another <a rel="nofollow" href="http://www.getbootstrap.com" target="_parent">Bootstrap</a> responsive layout for any kind of purpose. Please help us by telling your friends about templatemo. Praesent consectetur dictum massa eu tincidunt. Nulla facilisi. Nam tincidunt nec diam eget sollicitudin.
                         </p>
@@ -33,27 +33,26 @@ include '_head.php';
 
             </section>
             <!-- #home -->
-            <!-- #activites -->
-            <section id="tm-section-3" class="row tm-section">
-                <div class="tm-white-curve-left col-xs-12 col-sm-6 col-md-6 col-lg-7 col-xl-6">
-                    <div class="tm-white-curve-left-rec">
-
-                    </div>
-                    <div class="tm-white-curve-left-circle">
-
-                    </div>
-                    <div class="tm-white-curve-text">
-                        <h2 class="tm-section-header gray-text">About our company</h2>
-                        <p class="thin-font">Praesent consectetur dictum massa eu tincidunt. Nulla facilisi. Nam tincidunt nex diam eget sollicitudin. Quisque tincidunt ex sit amet metus ultricies, sed lobortis purus finibus.</p>
-                        <p>Morbi nex felis rutrum, faucibus odio sed, ullamcorper risus. Sed id condimentum nequq, at iaculis ex. Praesent faucibus viverra ante id auctor. Pellentesque at risus ut arcu blandit consectetur.</p>
-                    </div>
-
-                </div>
+            <!-- #programme -->
+            <section id="tm-section-5" class="row tm-section">
                 <div class="tm-flex-center col-xs-12 col-sm-6 col-md-6 col-lg-5 col-xl-6">
-                    <img src="img/strip-02.jpg" alt="Image" class="img-fluid tm-img">
+                    <img src="img/strip-01.jpg" alt="Image" class="img-fluid tm-img">
+                </div>
+
+                <div class="tm-white-curve-right col-xs-12 col-sm-6 col-md-6 col-lg-7 col-xl-6">
+
+                    <div class="tm-white-curve-right-circle"></div>
+                    <div class="tm-white-curve-right-rec"></div>
+
+                    <div class="tm-white-curve-text">
+                        <h2 class="tm-section-header textcol-sec-5">Our Services</h2>
+                        <p>Praesent consectetur dictum massa eu tincidunt. Nulla facilisi. Nam tincidunt nex diam eget sollicitudin. Quisque tincidunt ex sit amet metus ultricies, sed lobortis purus finibus.</p>
+                        <p class="thin-font">Morbi nex felis rutrum, faucibus odio sed, ullamcorper risus. Sed id condimentum nequq, at iaculis ex. Praesent faucibus viverra ante id auctor. Pellentesque at risus ut arcu blandit consectetur.</p>
+                    </div>
+
                 </div>
             </section>
-            <!-- #activites -->
+            <!-- #programme -->
 
             <?php include '_footer.php'; ?>
 
