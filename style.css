@@ -86,12 +86,12 @@ p:last-child { margin-bottom: 0; }
 	right: 0;
 	margin: 0 auto;
 	z-index: 1000;
-	font-size: 0.65em;
+	font-size: 0.6em;
 	padding: 1em 2em;
 }
 
 .navbar-container.sticky .navbar-brand {
-	padding: 0.2em 0.8em;
+	padding: 0.285em 1em;
 }
 
 .navbar-brand {
@@ -131,6 +131,7 @@ p:last-child { margin-bottom: 0; }
 }
 
 .tm-page-content { margin-top: 180px; }
+
 .tm-home-right {
 	padding: 100px 70px 100px 100px;
     display: -webkit-flex;
@@ -184,6 +185,10 @@ p:last-child { margin-bottom: 0; }
 #tm-section-4 {	background-image: url(img/strip-bg-04.jpg); } /* CYAN */
 #tm-section-5 {	background-image: url(img/strip-bg-05.jpg); } /* GREEN */
 #tm-section-6 {	background-image: url(img/strip-bg-06.jpg); } /* PURPLE */
+
+.tm-section ul {
+	padding-left: 20px;
+}
 
 .tm-footer {
     background-color: #DD0028;

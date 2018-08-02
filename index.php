@@ -16,19 +16,34 @@ include '_head.php';
                     <div class="tm-white-curve-left-rec"></div>
                     <div class="tm-white-curve-left-circle"></div>
                     <div class="tm-white-curve-text">
-                        <h2 class="tm-section-header textcol-sec-1">Introduction</h2>
-                        <p>
-                            Strip HTML5 template is another <a rel="nofollow" href="http://www.getbootstrap.com" target="_parent">Bootstrap</a> responsive layout for any kind of purpose. Please help us by telling your friends about templatemo. Praesent consectetur dictum massa eu tincidunt. Nulla facilisi. Nam tincidunt nec diam eget sollicitudin.
-                        </p>
-                        <p>
-                            Morbi nec felis rutrum, faucibus odio sed, ullamcorper risus. Sed id condimentum neque, at iaculis ex. Praesent faucibus viverra ante id auctor. Pellentesque at risus ut arcu blandit consectetur.
-                        </p>
+                        <h2 class="tm-section-header textcol-sec-1">Formation en 1 an</h2>
+                        <ul>
+                            <li>Application concrète des techniques des affaires</li>
+                            <li>Utilisation performante des outils bureautiques</li>
+                            <li>Connaissance active des langues</li>
+                            <li>Ouverture sur le monde économique, politique et social</li>
+                        </ul>
+                        <h2>&nbsp;</h2>
+                        <h2 class="tm-section-header textcol-sec-1">3 axes</h2>
+                        <ul>
+                            <li>La gestion</li>
+                            <li>La communication</li>
+                            <li>La culture générale</li>
+                            <li>Parler fort comme Adrien</li>
+                        </ul>
                     </div>
                 </div>
 
                 <div class="tm-home-right col-xs-12 col-sm-12 col-md-12 col-lg-5 col-xl-6">
-                    <h2 class="tm-section-header">Our Mission</h2>
-                    <p class="thin-font">We provide 100% free responsive Bootstrap themes for everyone. No credit link is required to use our templates. Nulla ligula odio, consesquat sec justo ut, dictum tempus eros. Duis finibus pulvinar felis, at sollicitudin ante. Aliquam sed augue dui.</p>
+                    <h2 class="tm-section-header">Notre méthode</h2>
+                    <p class="thin-font">
+                        <ul>
+                            <li>Approche basée sur la résolution de problèmes pratiques</li>
+                            <li>Travaux de groupe : Workshop, études de cas, Business game...</li>
+                            <li>Rencontres avec les entreprises, visites sur le terrain</li>
+                            <li>Cours en petits groupes, coaching individuel, bourse à l'emplois</li>
+                        </ul>
+                    </p>
                 </div>
 
             </section>
@@ -36,7 +51,7 @@ include '_head.php';
             <!-- #programme -->
             <section id="tm-section-2" class="row tm-section">
                 <div class="tm-flex-center col-xs-12 col-sm-6 col-md-6 col-lg-5 col-xl-6">
-                    <img src="img/strip-01.jpg" alt="Image" class="img-fluid tm-img">
+                    <img src="img/promo85.png" alt="Image" class="img-fluid tm-img">
                 </div>
 
                 <div class="tm-white-curve-right col-xs-12 col-sm-6 col-md-6 col-lg-7 col-xl-6">
@@ -45,7 +60,7 @@ include '_head.php';
                     <div class="tm-white-curve-right-rec"></div>
 
                     <div class="tm-white-curve-text">
-                        <h2 class="tm-section-header textcol-sec-2">Our Services</h2>
+                        <h2 class="tm-section-header textcol-sec-2">Participez au Melius Business Game 2018</h2>
                         <p>Praesent consectetur dictum massa eu tincidunt. Nulla facilisi. Nam tincidunt nex diam eget sollicitudin. Quisque tincidunt ex sit amet metus ultricies, sed lobortis purus finibus.</p>
                         <p class="thin-font">Morbi nex felis rutrum, faucibus odio sed, ullamcorper risus. Sed id condimentum nequq, at iaculis ex. Praesent faucibus viverra ante id auctor. Pellentesque at risus ut arcu blandit consectetur.</p>
                     </div>
