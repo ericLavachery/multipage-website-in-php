@@ -61,3 +61,11 @@ $(document).ready(function(){
 var ww = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
 console.log(ww);
 </script>
+<script>
+if('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('/sw.js')
+    .then(function() {
+        console.log('Service Worker Registered');
+    });
+}
+</script>
