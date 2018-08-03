@@ -16,11 +16,11 @@
         </div>
         <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 tm-contact-form-left">
             <div class="form-group">
-                <input type="text" id="prenom" name="prenom" value="<?php echo($prenom) ?>" class="form-control" placeholder="Prénom :"  required/>
+                <input type="text" id="prenom" name="prenom" class="form-control" placeholder="Prénom :"  required/>
                 <?php display_error($_POST["prenom"]) ?>
             </div>
             <div class="form-group">
-                <input type="text" id="nom" name="nom" value="<?php echo($nom) ?>" class="form-control" placeholder="Nom :"  required/>
+                <input type="text" id="nom" name="nom" class="form-control" placeholder="Nom :"  required/>
                 <?php display_error($_POST["nom"]) ?>
             </div>
             <div class="form-group">
