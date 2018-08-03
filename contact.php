@@ -20,7 +20,6 @@ include '_head.php';
                     <div class="tm-white-curve-right-rec"></div>
 
                     <div class="tm-white-curve-text">
-
                         <h2 class="tm-section-header textcol-sec-4">Contact</h2>
                         <p class="thin-font"></p>
 
@@ -54,8 +53,6 @@ include '_head.php';
     <!-- Tether for Bootstrap, http://stackoverflow.com/questions/34567939/how-to-fix-the-error-error-bootstrap-tooltips-require-tether-http-github-h -->
     <script src="https://www.atlasestateagents.co.uk/javascript/tether.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <!-- Single Page Nav (https://github.com/ChrisWojcik/single-page-nav) -->
-    <!-- <script src="js/jquery.singlePageNav.min.js"></script> -->
 
     <?php include '_js.php'; ?>
 
