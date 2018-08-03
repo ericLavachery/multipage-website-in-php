@@ -1,11 +1,19 @@
 <?php
-    $titre = $_POST["titre"];
-    $nom = $_POST["nom"];
-    $prenom = $_POST["prenom"];
-    $email = $_POST["email"];
-    $objet = $_POST["objet"];
-    $message = $_POST["message"];
-    
+    if (isset($_POST["submit"])){
+        $titre = $_POST["titre"];
+        $nom = $_POST["nom"];
+        $prenom = $_POST["prenom"];
+        $email = $_POST["email"];
+        $objet = $_POST["objet"];
+        $message = $_POST["message"];
+    }else{
+        $titre = "";
+        $nom = "";
+        $prenom = "";
+        $email = "";
+        $objet = "";
+        $message = "";
+    }
     function check_input($x){
         if(isset($_POST["submit"]) AND empty($x)){
             return(FALSE);
