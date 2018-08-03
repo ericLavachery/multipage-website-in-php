@@ -12,7 +12,5 @@ $teou = 'contact';
     </head>
     <body>
         <?php include 'form.php'; ?>
-        
-        <script src="custom-select.js" charset="utf-8"></script>
     </body>
 </html>
