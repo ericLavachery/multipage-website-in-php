@@ -309,6 +309,12 @@ p:last-child { margin-bottom: 0; }
 	padding-bottom: 0;
 	margin-bottom: 0;
 }
+.leformat {
+	padding-top: 0;
+	padding-bottom: 0;
+	margin-top: 0;
+	margin-bottom: 0;
+}
 
 .tm-contact-form-left {	padding-right: 0; }
 

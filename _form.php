@@ -44,6 +44,13 @@ require("sterilize.php");
             <div class="form-group">
                 <input type="file" id="document" name="document" class="form-control" placeholder="Document :">
             </div>
+            <div class="form-group leformat">
+                <span class="thin-font">Format de réponse désiré : &nbsp;</span>
+                <nobr>
+                    <input type="radio" name="format" id="HTML" value="HTML"> <label for="HTML">HTML &nbsp;</label>
+                    <input type="radio" name="format" id="TXT" value="TXT"> <label for="TXT">Texte &nbsp;</label>
+                </nobr>
+            </div>
             <button type="submit" name="submit" class="btn submit-btn" id="submit">Envoyer</button>
         </div>
     </form>
