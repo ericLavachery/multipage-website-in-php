@@ -1,19 +1,19 @@
 legend {
     font-weight: bold;
 }
-div.tableContainer {
+.tableContainer {
     display: table;
     border-spacing: 5px;
 }
-div.tableRow {
+.tableRow {
     display: table-row;
 }
-div.tableRow label.formLeftCol {
+.tableRow .formLeftCol {
     padding-top: 4px;
     display: table-cell;
     text-align: right;
     vertical-align: top;
 }
-div.tableRow input {
+.tableRow input {
     display: table-cell;
 }
