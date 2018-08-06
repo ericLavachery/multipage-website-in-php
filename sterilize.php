@@ -29,7 +29,8 @@
                 "date" => date('H:i:s l j/m/Y'),
                 "objet" => $objet,
                 "message" => $message];
-            print_r($user);
+            // print_r($user);
+            toConsole($user);
         }
     }
 
