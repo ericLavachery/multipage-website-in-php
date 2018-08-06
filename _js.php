@@ -74,3 +74,6 @@ if (navigator.serviceWorker.controller) {
     });
 }
 </script>
+<!-- <script type="text/javascript">
+$("#myModal").modal("show");
+</script> -->
