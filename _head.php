@@ -1,3 +1,12 @@
+<?php
+// petite fonction pour écrire dans la console en php
+function toConsole($data) {
+    $output = $data;
+    if (is_array($output))
+        $output = implode(',', $output);
+    echo "<script>console.log('Debug: " . $output . "');</script>";
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>

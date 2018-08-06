@@ -5,19 +5,21 @@
         $extension = ($image->file_src_name_ext); //On va chercher l'$extension du fichier
         if($extension == "png" OR $extension == "jpg" OR $extension == "jpeg" OR $extension == "gif"){ // On verifie le format du fichier
             if($image->uploaded) {//il suffit de lire la doc pour vérifier les fonctions
-                $image->file_new_name_body   = ($image->file_src_name);
+                $image->file_new_name_body   = ($image->file_src_name_body);
                 $image->file_auto_rename = true;
                 $image->mime_check = true;
                 $image->process('upload/');
                 if ($image->processed) {
-                    echo 'image uploaded';
+                    // echo 'image uploaded';
+                    toConsole('image uploaded');
                     $image->clean();
                 }else {
                     echo 'error : ' . $image->error;
                 }
             }
         }else{
-            echo("Mauvais format");
+            // echo("Mauvais format");
+            toConsole('Mauvais format');
         }
     }
 ?>

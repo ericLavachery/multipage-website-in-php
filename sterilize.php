@@ -21,13 +21,13 @@
             return(TRUE);
         }
     }
-    
+
     function display_error($x){
         if(!check_input($x)){
             echo("ERORR");
         }
     }
-    
+
     if(isset($_POST["submit"]) AND check_input($message) AND check_input($email)){
         $san_titre = check_input($titre) ? filter_var($titre,FILTER_SANITIZE_STRING) : "";
         $san_nom = check_input($nom) ? filter_var($nom,FILTER_SANITIZE_STRING) : "";
@@ -43,7 +43,8 @@
                 "date" => date('H:i:s l j/m/Y'),
                 "objet" => $san_objet,
                 "message" => $san_message];
-            print_r($user);
+            // print_r($user);
+            toConsole($user);
         }
     }
 ?>
