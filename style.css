@@ -185,6 +185,10 @@ p:last-child { margin-bottom: 0; }
 #tm-section-5 {	background-image: url(img/strip-bg-05.jpg); } /* GREEN */
 #tm-section-6 {	background-image: url(img/strip-bg-06.jpg); } /* PURPLE */
 
+.tm-section ul {
+	padding-left: 20px;
+}
+
 .tm-footer {
     background-color: #DD0028;
 	/* background-image: url(img/strip-bg-05.jpg); */

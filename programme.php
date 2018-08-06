@@ -9,34 +9,29 @@ include '_head.php';
         <!-- page content -->
         <div class="tm-page-content">
 
-            <!-- #home -->
+            <!-- programme -->
             <section id="tm-section-6" class="row tm-section">
 
                 <div class="tm-white-curve-left col-xs-12 col-sm-12 col-md-12 col-lg-7 col-xl-6">
                     <div class="tm-white-curve-left-rec"></div>
                     <div class="tm-white-curve-left-circle"></div>
                     <div class="tm-white-curve-text">
-                        <h2 class="tm-section-header textcol-sec-6">Introduction</h2>
-                        <p>
-                            Strip HTML5 template is another <a rel="nofollow" href="http://www.getbootstrap.com" target="_parent">Bootstrap</a> responsive layout for any kind of purpose. Please help us by telling your friends about templatemo. Praesent consectetur dictum massa eu tincidunt. Nulla facilisi. Nam tincidunt nec diam eget sollicitudin.
-                        </p>
-                        <p>
-                            Morbi nec felis rutrum, faucibus odio sed, ullamcorper risus. Sed id condimentum neque, at iaculis ex. Praesent faucibus viverra ante id auctor. Pellentesque at risus ut arcu blandit consectetur.
-                        </p>
+                        <h2 class="tm-section-header textcol-sec-6">La communication</h2>
+                        <p class="thin-font">L'information est la matière première de nombreux processus d'entreprise. Ecrite, orale, sur papier ou sur le web, elle occupe désormais une place centrale. Comment bien la transmettre ? En apprenant à bien communiquer. Comptez sur nous pour y parvenir. En français, en néerlandais et en anglais.</p>
                     </div>
                 </div>
 
                 <div class="tm-home-right col-xs-12 col-sm-12 col-md-12 col-lg-5 col-xl-6">
-                    <h2 class="tm-section-header">Our Mission</h2>
-                    <p class="thin-font">We provide 100% free responsive Bootstrap themes for everyone. No credit link is required to use our templates. Nulla ligula odio, consesquat sec justo ut, dictum tempus eros. Duis finibus pulvinar felis, at sollicitudin ante. Aliquam sed augue dui.</p>
+                    <h2 class="tm-section-header">La gestion</h2>
+                    <p class="thin-font">Vous vous familiariserez avec le coeur de l'entreprise : son statut, sa gestion commerciale, sa gestion financière, sa gestion des risques, des ressources humaines et des systèmes d'information.</p>
                 </div>
 
             </section>
-            <!-- #home -->
-            <!-- #programme -->
+            <!-- programme -->
+            <!-- programme -->
             <section id="tm-section-1" class="row tm-section">
                 <div class="tm-flex-center col-xs-12 col-sm-6 col-md-6 col-lg-5 col-xl-6">
-                    <img src="img/strip-01.jpg" alt="Image" class="img-fluid tm-img">
+                    <img src="img/dating.png" alt="Image" class="img-fluid tm-img">
                 </div>
 
                 <div class="tm-white-curve-right col-xs-12 col-sm-6 col-md-6 col-lg-7 col-xl-6">
@@ -45,14 +40,13 @@ include '_head.php';
                     <div class="tm-white-curve-right-rec"></div>
 
                     <div class="tm-white-curve-text">
-                        <h2 class="tm-section-header textcol-sec-1">Our Services</h2>
-                        <p>Praesent consectetur dictum massa eu tincidunt. Nulla facilisi. Nam tincidunt nex diam eget sollicitudin. Quisque tincidunt ex sit amet metus ultricies, sed lobortis purus finibus.</p>
-                        <p class="thin-font">Morbi nex felis rutrum, faucibus odio sed, ullamcorper risus. Sed id condimentum nequq, at iaculis ex. Praesent faucibus viverra ante id auctor. Pellentesque at risus ut arcu blandit consectetur.</p>
+                        <h2 class="tm-section-header textcol-sec-1">La culture générale</h2>
+                        <p class="thin-font">L'entreprise s'intègre dans un environnement en perpétuelle mutation. Le Cours Melius vous fournit la culture générale qui vous permettra de décrypter l'actualité, de mieux comprendre les défis et les menaces qui pèsent sur l'entreprise... en bref, de faire toute la différence.</p>
                     </div>
 
                 </div>
             </section>
-            <!-- #programme -->
+            <!-- programme -->
 
             <?php include '_footer.php'; ?>
 
