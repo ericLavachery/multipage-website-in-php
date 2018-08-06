@@ -1,6 +1,6 @@
 <?php
-require("upload.php");
-require("sterilize.php");
+    require("upload.php");
+    require("sterilize.php");
 ?>
 <div class="col-xs-12 col-sm-6 col-md-6 col-lg-5 col-xl-6 tm-contact-left">
     <h2 class="tm-section-header thin-font col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">Contactez-nous</h2>
@@ -75,30 +75,31 @@ require("sterilize.php");
     </div>
 
     <script>
-    function validate(input){
-        let error_message;
-        switch(input.id){
-            case ("prenom") :
-            error_message = "Ton Prénom.";
-            break;
-            case ("nom") :
-            error_message = "Ton Nom.";
-            break;
-            case ("email") :
-            error_message = "Ton Email.";
-            break;
-            case ("message") :
-            error_message = "Ton Message.";
-            break;
-            default :
-            error_message = "";
-            break;
+
+        function validate(input){
+            let error_message;
+            switch(input.id){
+                case ("prenom") :
+                    error_message = "Ton Prénom.";
+                    break;
+                case ("nom") :
+                    error_message = "Ton Nom.";
+                    break;
+                case ("email") :
+                    error_message = "Ton Email.";
+                    break;
+                case ("message") :
+                    error_message = "Ton Message.";
+                    break;
+                default :
+                    error_message = "";
+                    break;
+            }
+            if(input.value == ""){
+                input.setCustomValidity(error_message);
+            }else{
+                input.setCustomValidity("");
+            }
         }
-        if(input.value == ""){
-            input.setCustomValidity(error_message);
-        }else{
-            input.setCustomValidity("");
-        }
-    }
     </script>
 </div>
