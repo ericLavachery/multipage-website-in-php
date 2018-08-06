@@ -1,6 +1,6 @@
 <?php
-require("upload.php");
-require("sterilize.php");
+    require("upload.php");
+    require("sterilize.php");
 ?>
 <div class="col-xs-12 col-sm-6 col-md-6 col-lg-5 col-xl-6 tm-contact-left">
     <h2 class="tm-section-header thin-font col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">Contactez-nous</h2>
@@ -16,15 +16,16 @@ require("sterilize.php");
         <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 tm-contact-form-left">
             <div class="form-group">
                 <input type="text" id="prenom" name="prenom" class="form-control" placeholder="Prénom :"
-                required="true" onblur="validate(this)" onfocus="validate(this)"/>
+                required="true" onblur="validate(this)" onfocus="validate(this)" value="<?php echo($prenom) ?>"/>
             </div>
             <div class="form-group">
                 <input type="text" id="nom" name="nom" class="form-control" placeholder="Nom :"
-                required="true" onblur="validate(this)" onfocus="validate(this)"/>
+                required="true" onblur="validate(this)" onfocus="validate(this)" value="<?php echo($nom) ?>"/>
             </div>
             <div class="form-group">
                 <input type="email" id="email" name="email"  class="form-control" placeholder="Email :"
-                required="true" onblur="validate(this)" onfocus="validate(this)"/>
+                required="true" onblur="validate(this)" onfocus="validate(this)" value="<?php echo($email) ?>"/>
+                <?php echo($validate_email); ?>
             </div>
             <div class="form-group">
                 <select class="form-control" name="objet" id="objet">
@@ -43,62 +44,37 @@ require("sterilize.php");
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 tm-contact-form-full">
             <div class="form-group">
                 <input type="file" id="document" name="document" class="form-control" placeholder="Document :">
-            </div>
-            <div class="form-group leformat">
-                <span class="thin-font">Format de réponse désiré : &nbsp;</span>
-                <nobr>
-                    <input type="radio" name="format" id="HTML" value="HTML"> <label for="HTML">HTML &nbsp;</label>
-                    <input type="radio" name="format" id="TXT" value="TXT"> <label for="TXT">Texte &nbsp;</label>
-                </nobr>
+                <?php echo($validate_extension); ?>
             </div>
             <button type="submit" name="submit" class="btn submit-btn" id="submit">Envoyer</button>
         </div>
     </form>
-
-    <!-- Modal -->
-    <div id="myModal" class="modal fade" role="dialog">
-        <div class="modal-dialog">
-            <!-- Modal content-->
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    <h4 class="modal-title">Modal Header</h4>
-                </div>
-                <div class="modal-body">
-                    <p>Some text in the modal.</p>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                </div>
-            </div>
-        </div>
-    </div>
-
     <script>
-    function validate(input){
-        let error_message;
-        switch(input.id){
-            case ("prenom") :
-            error_message = "Ton Prénom.";
-            break;
-            case ("nom") :
-            error_message = "Ton Nom.";
-            break;
-            case ("email") :
-            error_message = "Ton Email.";
-            break;
-            case ("message") :
-            error_message = "Ton Message.";
-            break;
-            default :
-            error_message = "";
-            break;
+        
+        function validate(input){
+            let error_message;
+            switch(input.id){
+                case ("prenom") :
+                    error_message = "Ton Prénom.";
+                    break;
+                case ("nom") :
+                    error_message = "Ton Nom.";
+                    break;
+                case ("email") :
+                    error_message = "Ton Email.";
+                    break;
+                case ("message") :
+                    error_message = "Ton Message.";
+                    break;
+                default :
+                    error_message = "";
+                    break;
+            }
+            if(input.value == ""){
+                input.setCustomValidity(error_message);
+            }else{
+                input.setCustomValidity("");
+            }
         }
-        if(input.value == ""){
-            input.setCustomValidity(error_message);
-        }else{
-            input.setCustomValidity("");
-        }
-    }
     </script>
 </div>
