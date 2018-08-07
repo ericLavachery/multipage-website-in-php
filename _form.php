@@ -1,6 +1,7 @@
 <?php
     require("upload.php");
     require("sterilize.php");
+    require("log.php");
 ?>
 <div class="col-xs-12 col-sm-6 col-md-6 col-lg-5 col-xl-6 tm-contact-left">
     <h2 class="tm-section-header thin-font col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">Contactez-nous</h2>
@@ -8,37 +9,37 @@
     <form action="contact.php" method="post" class="contact-form" enctype="multipart/form-data">
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 tm-contact-form-full">
             <div class="form-group letitre" >
-                <input type="radio" name="titre" id="Mme" value="Mme"> <label for="Mme">Mme &nbsp;</label>
-                <input type="radio" name="titre" id="Melle" value="Melle"> <label for="Melle">Melle &nbsp;</label>
-                <input type="radio" name="titre" id="Mr" value="Mr"> <label for="Mr">Mr &nbsp;</label>
+                <input type="radio" name="titre" id="Mme" value="Mme"<?php if (isset($titre) && $titre == 'Mme') {echo(' checked');} ?>> <label for="Mme">Mme &nbsp;</label>
+                <input type="radio" name="titre" id="Melle" value="Melle"<?php if (isset($titre) && $titre == 'Melle') {echo(' checked');} ?>> <label for="Melle">Melle &nbsp;</label>
+                <input type="radio" name="titre" id="Mr" value="Mr"<?php if (isset($titre) && $titre == 'Mr') {echo(' checked');} ?>> <label for="Mr">Mr &nbsp;</label>
             </div>
         </div>
         <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 tm-contact-form-left">
             <div class="form-group">
                 <input type="text" id="prenom" name="prenom" class="form-control" placeholder="Prénom :"
-                required="true" onblur="validate(this)" onfocus="validate(this)" value="<?php echo($prenom) ?>"/>
+                required="true" value="<?php if (isset($prenom)) {echo($prenom);} ?>" onblur="validate(this)" onfocus="validate(this)"/>
             </div>
             <div class="form-group">
                 <input type="text" id="nom" name="nom" class="form-control" placeholder="Nom :"
-                required="true" onblur="validate(this)" onfocus="validate(this)" value="<?php echo($nom) ?>"/>
+                required="true" value="<?php if (isset($nom)) {echo($nom);} ?>" onblur="validate(this)" onfocus="validate(this)"/>
             </div>
             <div class="form-group">
                 <input type="email" id="email" name="email"  class="form-control" placeholder="Email :"
-                required="true" onblur="validate(this)" onfocus="validate(this)" value="<?php echo($email) ?>"/>
+                required="true" value="<?php if (isset($email)) {echo($email);} ?>" onblur="validate(this)" onfocus="validate(this)"/>
                 <?php echo($validate_email); ?>
             </div>
             <div class="form-group">
                 <select class="form-control" name="objet" id="objet">
-                    <option value="">Objet :</option>
-                    <option value="info">Demande d'information</option>
-                    <option value="inscription">Inscription</option>
+                    <option value="" selected>Objet :</option>
+                    <option value="info"<?php if (isset($objet) && $objet == 'info') {echo(' selected');} ?>>Demande d'information</option>
+                    <option value="inscription"<?php if (isset($objet) && $objet == 'inscription') {echo(' selected');} ?>>Inscription</option>
                 </select>
             </div>
         </div>
         <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 tm-contact-form-right">
             <div class="form-group">
                 <textarea id="message" name="message" class="form-control" rows="8" placeholder="Message :"
-                required="true" onblur="validate(this)" onfocus="validate(this)"></textarea>
+                required="true" onblur="validate(this)" onfocus="validate(this)"><?php if (isset($message)) {echo($message);} ?></textarea>
             </div>
         </div>
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 tm-contact-form-full">
@@ -46,11 +47,38 @@
                 <input type="file" id="document" name="document" class="form-control" placeholder="Document :">
                 <?php echo($validate_extension); ?>
             </div>
+            <div class="form-group leformat">
+                <span class="thin-font">Format de réponse désiré : &nbsp;</span>
+                <nobr>
+                    <input type="radio" name="format" id="HTML" value="HTML" checked> <label for="HTML">HTML &nbsp;</label>
+                    <input type="radio" name="format" id="TXT" value="TXT"<?php if (isset($format) && $format == 'TXT') {echo(' checked');} ?>> <label for="TXT">Texte &nbsp;</label>
+                </nobr>
+            </div>
             <button type="submit" name="submit" class="btn submit-btn" id="submit">Envoyer</button>
         </div>
     </form>
+
+    <!-- Modal -->
+    <div id="myModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Modal Header</h4>
+                </div>
+                <div class="modal-body">
+                    <p>Wééé, ça a marchééééé !</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <script>
-        
+
         function validate(input){
             let error_message;
             switch(input.id){
