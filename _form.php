@@ -28,7 +28,7 @@
             </div>
             <div class="form-group">
                 <select class="form-control" name="objet" id="objet">
-                    <option value="info" selected>Objet :</option>
+                    <option value="" selected>Objet :</option>
                     <option value="info"<?php if (isset($objet) && $objet == 'info') {echo(' selected');} ?>>Demande d'information</option>
                     <option value="inscription"<?php if (isset($objet) && $objet == 'inscription') {echo(' selected');} ?>>Inscription</option>
                 </select>
@@ -55,20 +55,17 @@
         </div>
     </form>
 
-    <!-- Modal -->
-    <div id="myModal" class="modal fade" role="dialog">
+    <!-- Form confirmation Modal -->
+    <div id="formConfirmModal" class="modal fade" role="dialog">
         <div class="modal-dialog">
             <!-- Modal content-->
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    <h4 class="modal-title">Modal Header</h4>
+                    <h4 class="modal-title"><?= $modalTitle ?></h4>
                 </div>
                 <div class="modal-body">
-                    <p>Wééé, ça a marchééééé !</p>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <p><?= $modalBody ?></p>
                 </div>
             </div>
         </div>
