@@ -20,6 +20,7 @@
         $email = check_input($_POST["email"]) ? filter_var($_POST["email"],FILTER_SANITIZE_EMAIL) : "";
         $objet = check_input($_POST["objet"]) ? filter_var($_POST["objet"],FILTER_SANITIZE_STRING) : "";
         $message = check_input($_POST["message"]) ? filter_var($_POST["message"],FILTER_SANITIZE_STRING) : "";
+        $format = check_input($_POST["format"]) ? filter_var($_POST["format"],FILTER_SANITIZE_STRING) : "";
         $validate_email = (filter_var($email,FILTER_VALIDATE_EMAIL) ? "" : $error_message);
         if(filter_var($email,FILTER_VALIDATE_EMAIL)){
             $user=["titre" => $titre,
@@ -28,7 +29,8 @@
                 "email" => $email,
                 "date" => date('H:i:s l j/m/Y'),
                 "objet" => $objet,
-                "message" => $message];
+                "message" => $message,
+                "format" => $format];
             // print_r($user);
             toConsole($user);
         }

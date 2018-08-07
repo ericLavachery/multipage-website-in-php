@@ -28,7 +28,7 @@
             </div>
             <div class="form-group">
                 <select class="form-control" name="objet" id="objet">
-                    <option value="" selected>Objet :</option>
+                    <option value="info" selected>Objet :</option>
                     <option value="info"<?php if (isset($objet) && $objet == 'info') {echo(' selected');} ?>>Demande d'information</option>
                     <option value="inscription"<?php if (isset($objet) && $objet == 'inscription') {echo(' selected');} ?>>Inscription</option>
                 </select>
