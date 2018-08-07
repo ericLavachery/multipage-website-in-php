@@ -33,7 +33,7 @@
             if ($objet == 'info') {
                 $modalTitle = "Votre demande d'information à bien été envoyée";
             } else {
-                $modalTitle = "Votre demande d'information à bien été envoyée";
+                $modalTitle = "Votre inscription à bien été envoyée";
             }
             $modalBody = $prenom . ' ' . $nom . '<br>Email = ' . $email . '<br>' . $message;
             // print_r($user);
