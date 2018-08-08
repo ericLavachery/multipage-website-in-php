@@ -14,6 +14,7 @@ function toConsole($data) {
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#DD0028"/>
+    <meta name="description" content="Melius, école supérieure de gestion et communication.">
     <title>Melius | <?= $teou ?></title>
     <!-- Strip http://www.templatemo.com/tm-482-strip -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400">
