@@ -13,7 +13,7 @@ $mail->isSMTP();
 // 2 = client and server messages
 $mail->SMTPDebug = 2;
 //Set the hostname of the mail server
-$mail->Host = 'smtp.gmail.com';
+//$mail->Host = 'smtp.gmail.com';
 // use
 $mail->Host = gethostbyname('smtp.gmail.com');
 // if your network does not support SMTP over IPv6
