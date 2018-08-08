@@ -1,9 +1,9 @@
 <?php
     require("upload.php");
     require("sterilize.php");
+    require("_mailbody.php");
     require("mail.php");
     require("log.php");
-    require("_mailbody.php");
     require("_modal.php");
 ?>
 <div class="col-xs-12 col-sm-6 col-md-6 col-lg-5 col-xl-6 tm-contact-left">
