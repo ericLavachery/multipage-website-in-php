@@ -41,7 +41,8 @@
         //Replace the plain text body with one created manually
         $mail->AltBody = 'This is a plain-text message body';
         //Attach an image file
-        $mail->addAttachment("__DIR__/upload/".$user['file']);
+        echo($user['file']);
+        $mail->addAttachment("upload/".$user['file']);
         //send the message, check for errors
         if (!$mail->send()) {
             echo "Mailer Error: " . $mail->ErrorInfo;

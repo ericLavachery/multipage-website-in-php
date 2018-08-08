@@ -18,19 +18,24 @@
         $extension = ($image->file_src_name_ext); //On va chercher l'$extension du fichier
         $validate_extension = (validate_extension($extension)) ? "" : $error_extension;
         if(validate_extension($extension)){ // On verifie le format du fichier
+            $user_file = ["error" => TRUE];
             if($image->uploaded) {//il suffit de lire la doc pour vérifier les fonctions
                 $image->file_new_name_body   = ($image->file_src_name_body);
                 $image->file_auto_rename = true;
                 $image->mime_check = true;
                 $image->process('upload/');
                 if ($image->processed) {
-                    // echo 'image uploaded';
+                    $user_file = ["file" => ($image->file_dst_name),
+                        "error" => TRUE];
                     toConsole('image uploaded');
                     $image->clean();
                 }else {
                     echo 'error : ' . $image->error;
+                    $user_file = ["error" => FALSE];
                 }
             }
+        }else{
+            $user_file = ["error" => FALSE];
         }
     }
 ?>
