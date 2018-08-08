@@ -3,7 +3,7 @@
     require 'vendor/autoload.php';
 
     if(isset($_POST["submit"])){
-        echo(__DIR__ ."/upload/$user['file']");
+        echo($user['file']);
         //Create a new PHPMailer instance
         $mail = new PHPMailer;
         //Tell PHPMailer to use SMTP
