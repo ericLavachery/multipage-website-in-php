@@ -32,7 +32,7 @@
         //Set an alternative reply-to address
         $mail->addReplyTo(($user["email"]));
         //Set who the message is to be sent to
-        $mail->addAddress(($user["email"]));
+        $mail->addAddress('melius.contact@gmail.com');
         //Set the subject line
         $mail->Subject = $user["objet"];
         //Read an HTML message body from an external file, convert referenced images to embedded,
