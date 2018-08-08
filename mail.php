@@ -13,9 +13,9 @@ $mail->isSMTP();
 // 2 = client and server messages
 $mail->SMTPDebug = 2;
 //Set the hostname of the mail server
-$mail->Host = 'smtp.gmail.com';
+//$mail->Host = 'smtp.gmail.com';
 // use
-// $mail->Host = gethostbyname('smtp.gmail.com');
+$mail->Host = gethostbyname('smtp.gmail.com');
 // if your network does not support SMTP over IPv6
 //Set the SMTP port number - 587 for authenticated TLS, a.k.a. RFC4409 SMTP submission
 $mail->Port = 587;
@@ -58,14 +58,14 @@ if (!$mail->send()) {
 //Function to call which uses the PHP imap_*() functions to save messages: https://php.net/manual/en/book.imap.php
 //You can use imap_getmailboxes($imapStream, '/imap/ssl') to get a list of available folders or labels, this can
 //be useful if you are trying to get this working on a non-Gmail IMAP server.
-function save_mail($mail)
-{
+//function save_mail($mail)
+//{
     //You can change 'Sent Mail' to any other folder or tag
-    $path = "{imap.gmail.com:993/imap/ssl}[Gmail]/Sent Mail";
+    //$path = "{imap.gmail.com:993/imap/ssl}[Gmail]/Sent Mail";
     //Tell your server to open an IMAP connection using the same username and password as you used for SMTP
-    $imapStream = imap_open($path, $mail->Username, $mail->Password);
-    $result = imap_append($imapStream, $path, $mail->getSentMIMEMessage());
-    imap_close($imapStream);
-    return $result;
-}
-}
+    //$imapStream = imap_open($path, $mail->Username, $mail->Password);
+    //$result = imap_append($imapStream, $path, $mail->getSentMIMEMessage());
+    //imap_close($imapStream);
+    //return $result;
+//}
+//}
