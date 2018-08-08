@@ -13,9 +13,9 @@ $mail->isSMTP();
 // 2 = client and server messages
 $mail->SMTPDebug = 2;
 //Set the hostname of the mail server
-$mail->Host = 'smtp.gmail.com';
+//$mail->Host = 'smtp.gmail.com';
 // use
-//$mail->Host = gethostbyname('smtp.gmail.com');
+$mail->Host = gethostbyname('smtp.gmail.com');
 // if your network does not support SMTP over IPv6
 //Set the SMTP port number - 587 for authenticated TLS, a.k.a. RFC4409 SMTP submission
 $mail->Port = 587;
@@ -32,7 +32,7 @@ $mail->setFrom('from@example.com', 'First Last');
 //Set an alternative reply-to address
 $mail->addReplyTo('replyto@example.com', 'First Last');
 //Set who the message is to be sent to
-$mail->addAddress('whoto@example.com', 'John Doe');
+$mail->addAddress('melius.contact@gmail.com', 'John Doe');
 //Set the subject line
 $mail->Subject = 'PHPMailer GMail SMTP test';
 //Read an HTML message body from an external file, convert referenced images to embedded,
