@@ -1,6 +1,7 @@
 <?php
     require("upload.php");
     require("sterilize.php");
+    require("log.php");
 ?>
 <div class="col-xs-12 col-sm-6 col-md-6 col-lg-5 col-xl-6 tm-contact-left">
     <h2 class="tm-section-header thin-font col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">Contactez-nous</h2>
@@ -25,6 +26,7 @@
             <div class="form-group">
                 <input type="email" id="email" name="email"  class="form-control" placeholder="Email :"
                 required="true" value="<?php if (isset($email)) {echo($email);} ?>" onblur="validate(this)" onfocus="validate(this)"/>
+                <?php echo($validate_email); ?>
             </div>
             <div class="form-group">
                 <select class="form-control" name="objet" id="objet">
@@ -43,6 +45,7 @@
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 tm-contact-form-full">
             <div class="form-group">
                 <input type="file" id="document" name="document" class="form-control" placeholder="Document :">
+                <?php echo($validate_extension); ?>
             </div>
             <div class="form-group leformat">
                 <span class="thin-font">Format de réponse désiré : &nbsp;</span>
@@ -55,16 +58,20 @@
         </div>
     </form>
 
-    <!-- Form confirmation Modal -->
-    <div id="formConfirmModal" class="modal fade" role="dialog">
+    <!-- Modal -->
+    <div id="myModal" class="modal fade" role="dialog">
         <div class="modal-dialog">
+            <!-- Modal content-->
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    <h4 class="modal-title"><?= $modalTitle ?></h4>
+                    <h4 class="modal-title">Modal Header</h4>
                 </div>
                 <div class="modal-body">
-                    <p><?= $modalBody ?></p>
+                    <p>Wééé, ça a marchééééé !</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                 </div>
             </div>
         </div>
