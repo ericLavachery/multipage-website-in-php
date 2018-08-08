@@ -2,6 +2,7 @@
     require("upload.php");
     require("sterilize.php");
     require("log.php");
+    require("_modal.php");
 ?>
 <div class="col-xs-12 col-sm-6 col-md-6 col-lg-5 col-xl-6 tm-contact-left">
     <h2 class="tm-section-header thin-font col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">Contactez-nous</h2>
@@ -26,7 +27,7 @@
             <div class="form-group">
                 <input type="email" id="email" name="email"  class="form-control" placeholder="Email :"
                 required="true" value="<?php if (isset($email)) {echo($email);} ?>" onblur="validate(this)" onfocus="validate(this)"/>
-                <?php echo($validate_email); ?>
+                <?php if (isset($validate_email)) {echo($validate_email);} ?>
             </div>
             <div class="form-group">
                 <select class="form-control" name="objet" id="objet">
@@ -45,7 +46,7 @@
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 tm-contact-form-full">
             <div class="form-group">
                 <input type="file" id="document" name="document" class="form-control" placeholder="Document :">
-                <?php echo($validate_extension); ?>
+                <?php if (isset($validate_extension)) {echo($validate_extension);} ?>
             </div>
             <div class="form-group leformat">
                 <span class="thin-font">Format de réponse désiré : &nbsp;</span>
