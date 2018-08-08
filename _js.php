@@ -66,7 +66,7 @@ console.log(ww);
     echo('<script>$("#formConfirmModal").modal("show");</script>');
 } ?>
 
-<!-- <script type="text/javascript">
+<script type="text/javascript">
 //Add this below content to your HTML page, or add the js file to your page at the very top to register service worker
 if (navigator.serviceWorker.controller) {
     console.log('[PWA Builder] active service worker found, no need to register')
@@ -78,9 +78,9 @@ if (navigator.serviceWorker.controller) {
         console.log('Service worker has been registered for scope:'+ reg.scope);
     });
 }
-</script> -->
+</script>
 
-<script type="text/javascript">
+<!-- <script type="text/javascript">
 //This is the service worker with the Cache-first network
 //Add this below content to your HTML page, or add the js file to your page at the very top to register service worker
 if (navigator.serviceWorker.controller) {
@@ -93,4 +93,4 @@ scope: './'
 console.log('Service worker has been registered for scope:'+ reg.scope);
 });
 }
-</script>
+</script> -->
