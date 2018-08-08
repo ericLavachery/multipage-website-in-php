@@ -28,7 +28,7 @@
         //Password to use for SMTP authentication
         $mail->Password = "meliusinfo";
         //Set who the message is to be sent from
-        $mail->setFrom($user["email"], echo($user["nom"] . $user["prenom"]));
+        $mail->setFrom($user["email"], $user["nom"] . $user["prenom"]);
         //Set who the message is to be sent to
         $mail->addAddress('melius.contact@gmail.com');
         //Set the subject line
@@ -39,7 +39,7 @@
         //Replace the plain text body with one created manually
         $mail->AltBody = 'This is a plain-text message body';
         //Attach an image file
-        //$mail->addAttachment("upload/$user['file']");
+        $mail->addAttachment("upload/".$user['file']);
         //send the message, check for errors
         if (!$mail->send()) {
             echo "Mailer Error: " . $mail->ErrorInfo;
