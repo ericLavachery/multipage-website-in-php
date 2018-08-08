@@ -28,7 +28,6 @@
                     $user_file = ["file" => ($image->file_dst_name),
                         "error" => TRUE];
                     toConsole($user_file);
-                    toConsole($image->file_dst_name);
                     $image->clean();
                 }else {
                     echo 'error : ' . $image->error;
