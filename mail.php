@@ -24,9 +24,9 @@ $mail->SMTPSecure = 'tls';
 //Whether to use SMTP authentication
 $mail->SMTPAuth = true;
 //Username to use for SMTP authentication - use full email address for gmail
-$mail->Username = "claudiu.simion.cornea@gmail.com";
+$mail->Username = "melius.contact@gmail.com";
 //Password to use for SMTP authentication
-$mail->Password = "CCs15935742plm";
+$mail->Password = "meliusinfo";
 //Set who the message is to be sent from
 $mail->setFrom('from@example.com', 'First Last');
 //Set an alternative reply-to address
