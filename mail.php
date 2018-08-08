@@ -1,7 +1,9 @@
 <?php
     use PHPMailer\PHPMailer\PHPMailer;
     require 'vendor/autoload.php';
-    echo($user_file["error"]);
+    echo("file".$user_file["error"]);
+    echo("user".$user_info["error"]);
+    print_r($user);
     if(isset($_POST["submit"]) AND $user_info["error"] AND $user_file["error"]){
         echo($user_file["error"]);
         print_r($user);
