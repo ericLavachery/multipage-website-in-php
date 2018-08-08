@@ -23,7 +23,7 @@ if(isset($_POST["submit"])){
     $message = check_input($_POST["message"]) ? filter_var($_POST["message"],FILTER_SANITIZE_STRING) : "";
     $validate_email = (filter_var($email,FILTER_VALIDATE_EMAIL) ? "" : $error_message);
     if(filter_var($email,FILTER_VALIDATE_EMAIL)){
-        $user=["titre" => $titre,
+        $user_info=["titre" => $titre,
         "nom" => $nom,
         "prenom" => $prenom,
         "email" => $email,
@@ -32,7 +32,7 @@ if(isset($_POST["submit"])){
         "format" => $format,
         "message" => $message,
         "error" => TRUE];
-        toConsole($user);
+        toConsole($user_info);
     }
 }
 
