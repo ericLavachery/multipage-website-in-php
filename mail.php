@@ -3,6 +3,7 @@
     require 'vendor/autoload.php';
 
     if(isset($_POST["submit"])){
+        echo(__DIR__ ."/upload/$user['file']");
         //Create a new PHPMailer instance
         $mail = new PHPMailer;
         //Tell PHPMailer to use SMTP
@@ -41,7 +42,7 @@
         //Replace the plain text body with one created manually
         $mail->AltBody = 'This is a plain-text message body';
         //Attach an image file
-        $mail->addAttachment(include(__DIR__ ."/upload/" . $user['file']));
+        $mail->addAttachment(require(__DIR__ ."/upload/$user['file']"));
         //send the message, check for errors
         if (!$mail->send()) {
             echo "Mailer Error: " . $mail->ErrorInfo;
