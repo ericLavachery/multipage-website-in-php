@@ -28,11 +28,11 @@
         //Password to use for SMTP authentication
         $mail->Password = "meliusinfo";
         //Set who the message is to be sent from
-        $mail->setFrom("melius.contact@gmail.com", ($user["nom"] ." ". $user["prenom"]));
+        $mail->setFrom(($user["email"]), ($user["nom"] ." ". $user["prenom"]));
         //Set an alternative reply-to address
         $mail->addReplyTo(($user["email"]));
         //Set who the message is to be sent to
-        $mail->addAddress('melius.contact@gmail.com');
+        $mail->addAddress(($user["email"]));
         //Set the subject line
         $mail->Subject = $user["objet"];
         //Read an HTML message body from an external file, convert referenced images to embedded,
