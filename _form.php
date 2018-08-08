@@ -52,8 +52,9 @@
         </div>
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 tm-contact-form-full">
             <div class="form-group">
-                <label class="noShow" for="document">Ducument</label>
-                <input type="file" id="document" name="document" class="form-control" placeholder="Document :">
+                <label class="noShow" for="document">Document</label>
+                <input type="file" id="document" name="document" class="form-control" placeholder="Document :"
+                accept=".jpg, .jpeg, .png, .gif">
                 <?php if (isset($validate_extension)) {echo($validate_extension);} ?>
             </div>
             <div class="form-group leformat">
