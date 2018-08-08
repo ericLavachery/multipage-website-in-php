@@ -3,7 +3,6 @@
     require 'vendor/autoload.php';
 
     if(isset($_POST["submit"])){
-        echo($user);
         //Create a new PHPMailer instance
         $mail = new PHPMailer;
         //Tell PHPMailer to use SMTP
@@ -29,20 +28,18 @@
         //Password to use for SMTP authentication
         $mail->Password = "meliusinfo";
         //Set who the message is to be sent from
-        $mail->setFrom('from@example.com', 'First Last');
-        //Set an alternative reply-to address
-        $mail->addReplyTo('replyto@example.com', 'First Last');
+        $mail->setFrom($user["email"], echo($user["nom"] . $user["prenom"]));
         //Set who the message is to be sent to
         $mail->addAddress('melius.contact@gmail.com');
         //Set the subject line
-        $mail->Subject = 'PHPMailer GMail SMTP test';
+        $mail->Subject = $user["objet"];
         //Read an HTML message body from an external file, convert referenced images to embedded,
         //convert HTML into a basic plain-text alternative body
-        $mail->msgHTML("test");
+        $mail->msgHTML($user["message"]);
         //Replace the plain text body with one created manually
         $mail->AltBody = 'This is a plain-text message body';
         //Attach an image file
-        //$mail->addAttachment('images/phpmailer_mini.png');
+        $mail->addAttachment("upload/$user['file']");
         //send the message, check for errors
         if (!$mail->send()) {
             echo "Mailer Error: " . $mail->ErrorInfo;
