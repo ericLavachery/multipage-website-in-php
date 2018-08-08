@@ -1,3 +1,11 @@
+<!-- load JS files -->
+<!-- <script src="js/jquery-1.11.3.min.js"></script> -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<!-- Tether for Bootstrap -->
+<script src="https://www.atlasestateagents.co.uk/javascript/tether.min.js"></script>
+<!-- <script src="js/bootstrap.min.js"></script> -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
 <script type="text/javascript">
 var bigNavbarHeight = 90;
 var smallNavbarHeight = 68;
@@ -62,7 +70,7 @@ var ww = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
 console.log(ww);
 </script>
 
-<?php if ($okThen == 'yes') {
+<?php if (isset($okThen) && $okThen == 'yes') {
     echo('<script>$("#formConfirmModal").modal("show");</script>');
 } ?>
 

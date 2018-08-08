@@ -18,6 +18,7 @@ function toConsole($data) {
     <title>Melius | <?= $teou ?></title>
     <!-- Strip http://www.templatemo.com/tm-482-strip -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"> -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="mq.css">
