@@ -28,9 +28,9 @@
         //Password to use for SMTP authentication
         $mail->Password = "meliusinfo";
         //Set who the message is to be sent from
-        $mail->setFrom("melius.contact@gmail.com", "Contact Web Site");
+        $mail->setFrom("melius.contact@gmail.com", ($user["nom"] ." ". $user["prenom"]));
         //Set an alternative reply-to address
-        $mail->addReplyTo(($user["email"]), ($user["nom"] ." ". $user["prenom"]));
+        $mail->addReplyTo(($user["email"]));
         //Set who the message is to be sent to
         $mail->addAddress('melius.contact@gmail.com');
         //Set the subject line
