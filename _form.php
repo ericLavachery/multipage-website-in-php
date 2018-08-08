@@ -72,16 +72,16 @@
             let error_message;
             switch(input.id){
                 case ("prenom") :
-                    error_message = "Ton Prénom.";
+                    error_message = "Veuillez entrer votre prénom";
                     break;
                 case ("nom") :
-                    error_message = "Ton Nom.";
+                    error_message = "Veuillez entrer votre nom de famille";
                     break;
                 case ("email") :
-                    error_message = "Ton Email.";
+                    error_message = "Veuillez entrer votre email";
                     break;
                 case ("message") :
-                    error_message = "Ton Message.";
+                    error_message = "Veuillez écrire votre message ici";
                     break;
                 default :
                     error_message = "";
