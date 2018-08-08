@@ -30,8 +30,8 @@ if(isset($_POST["submit"])){
         "date" => date('H:i:s l j/m/Y'),
         "objet" => $objet,
         "format" => $format,
-        "message" => $message];
-        // print_r($user);
+        "message" => $message,
+        "error" => TRUE];
         toConsole($user);
     }
 }
