@@ -3,8 +3,6 @@
     require 'vendor/autoload.php';
     
     if(isset($_POST["submit"]) AND $user_info["error"] AND $user_file["error"]){
-        echo("file".$user_file["error"]);
-        echo("user".$user_info["error"]);
         print_r($user);
         //Create a new PHPMailer instance
         $mail = new PHPMailer;
