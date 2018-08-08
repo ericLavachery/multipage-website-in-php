@@ -17,19 +17,23 @@
         </div>
         <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 tm-contact-form-left">
             <div class="form-group">
+                <label class="noShow" for="prenom">Prénom</label>
                 <input type="text" id="prenom" name="prenom" class="form-control" placeholder="Prénom :"
                 required="true" value="<?php if (isset($prenom)) {echo($prenom);} ?>" onblur="validate(this)" onfocus="validate(this)"/>
             </div>
             <div class="form-group">
+                <label class="noShow" for="nom">Nom</label>
                 <input type="text" id="nom" name="nom" class="form-control" placeholder="Nom :"
                 required="true" value="<?php if (isset($nom)) {echo($nom);} ?>" onblur="validate(this)" onfocus="validate(this)"/>
             </div>
             <div class="form-group">
+                <label class="noShow" for="email">Email</label>
                 <input type="email" id="email" name="email"  class="form-control" placeholder="Email :"
                 required="true" value="<?php if (isset($email)) {echo($email);} ?>" onblur="validate(this)" onfocus="validate(this)"/>
                 <?php if (isset($validate_email)) {echo($validate_email);} ?>
             </div>
             <div class="form-group">
+                <label class="noShow" for="objet">Objet</label>
                 <select class="form-control" name="objet" id="objet">
                     <option value="" selected>Objet :</option>
                     <option value="info"<?php if (isset($objet) && $objet == 'info') {echo(' selected');} ?>>Demande d'information</option>
@@ -39,12 +43,14 @@
         </div>
         <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 tm-contact-form-right">
             <div class="form-group">
+                <label class="noShow" for="message">Message</label>
                 <textarea id="message" name="message" class="form-control" rows="8" placeholder="Message :"
                 required="true" onblur="validate(this)" onfocus="validate(this)"><?php if (isset($message)) {echo($message);} ?></textarea>
             </div>
         </div>
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 tm-contact-form-full">
             <div class="form-group">
+                <label class="noShow" for="document">Ducument</label>
                 <input type="file" id="document" name="document" class="form-control" placeholder="Document :">
                 <?php if (isset($validate_extension)) {echo($validate_extension);} ?>
             </div>
