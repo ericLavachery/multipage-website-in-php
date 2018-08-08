@@ -61,7 +61,12 @@ $(document).ready(function(){
 var ww = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
 console.log(ww);
 </script>
-<script type="text/javascript">
+
+<?php if ($okThen == 'yes') {
+    echo('<script>$("#formConfirmModal").modal("show");</script>');
+} ?>
+
+<!-- <script type="text/javascript">
 //Add this below content to your HTML page, or add the js file to your page at the very top to register service worker
 if (navigator.serviceWorker.controller) {
     console.log('[PWA Builder] active service worker found, no need to register')
@@ -73,8 +78,19 @@ if (navigator.serviceWorker.controller) {
         console.log('Service worker has been registered for scope:'+ reg.scope);
     });
 }
-</script>
+</script> -->
 
-<?php if ($okThen == 'yes') {
-    echo('<script>$("#formConfirmModal").modal("show");</script>');
-} ?>
+<script type="text/javascript">
+//This is the service worker with the Cache-first network
+//Add this below content to your HTML page, or add the js file to your page at the very top to register service worker
+if (navigator.serviceWorker.controller) {
+console.log('[PWA Builder] active service worker found, no need to register')
+} else {
+//Register the ServiceWorker
+navigator.serviceWorker.register('pwabuilder-sw.js', {
+scope: './'
+}).then(function(reg) {
+console.log('Service worker has been registered for scope:'+ reg.scope);
+});
+}
+</script>
