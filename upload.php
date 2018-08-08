@@ -27,7 +27,7 @@
                 if ($image->processed) {
                     $user_file = ["file" => ($image->file_dst_name),
                         "error" => TRUE];
-                    toConsole('image uploaded');
+                    toConsole($user_file);
                     toConsole($image->file_dst_name);
                     $image->clean();
                 }else {
