@@ -53,7 +53,10 @@
         if (!$mail->send()) {
             echo "Mailer Error: " . $mail->ErrorInfo;
         } else {
-            // echo "Message sent!";
+            echo "
+                <div class='alert alert-success' role='alert'>
+                    This is a success alert—check it out!
+                </div>";
             toConsole('Message sent!');
             $okThen = 'yes';
         }
