@@ -23,7 +23,7 @@ include '_head.php';
                                 echo $newLine;
                             }
                         } else {
-                            echo("Il n'y a pas encore de fichier log...")
+                            echo("Il n'y a pas encore de fichier log...");
                         }
                         ?>
                     </ul>
