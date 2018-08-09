@@ -1,7 +1,6 @@
 <?php
 if(isset($_POST["submit"])){
-    if ($user_info["error"] && $user_file["error"]){
-        $okThen = 'yes';
+    if ($user_info["error"]){
         if ($user_info['objet'] == 'info') {
             $modalTitle = "Votre demande d'information à bien été envoyée";
         } else {

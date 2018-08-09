@@ -51,7 +51,9 @@
         if (!$mail->send()) {
             echo "Mailer Error: " . $mail->ErrorInfo;
         } else {
-            echo "Message sent!";
+            // echo "Message sent!";
+            toConsole('Message sent!');
+            $okThen = 'yes';
         }
     }
 ?>
