@@ -19,7 +19,7 @@ include '_head.php';
                             $logJSON = file_get_contents("log.json");
                             $logARRAY = json_decode($logJSON, TRUE);
                             foreach ($logARRAY as $key => $value) {
-                                $newLine = '<li>' . $value["prenom"] . ' | ' . $value["objet"] . ' | ' . $value["date"] . ' | ' . $value["message"] . ' | ' . $value["date"] . ' | ' . $value["format"] . '</li>';
+                                $newLine = '<li>' . $value["prenom"] . ' | ' . $value["objet"] . ' | ' . ' | ' . $value["message"] . ' | ' . $value["date"] . ' | ' . $value["format"] . '</li>';
                                 echo $newLine;
                             }
                         } else {
