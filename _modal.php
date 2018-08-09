@@ -1,12 +1,12 @@
 <?php
 if(isset($_POST["submit"])){
-    if ($user_info["error"]){
-        if ($user_info['objet'] == 'info') {
+    if ($okThen == 'yes'){
+        if ($user['objet'] == 'info') {
             $modalTitle = "Votre demande d'information à bien été envoyée";
         } else {
             $modalTitle = "Votre inscription à bien été envoyée";
         }
-        $modalBody = $user_info['prenom'] . ' ' . $user_info['nom'] . '<br>Email = ' . $user_info['email'] . '<br>' . $user_info['message'];
+        $modalBody = $user['prenom'] . ' ' . $user['nom'] . '<br>Email = ' . $user['email'] . '<br>' . $user['message'];
     }
 }
 ?>
