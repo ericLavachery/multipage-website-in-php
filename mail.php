@@ -1,7 +1,7 @@
 <?php
     use PHPMailer\PHPMailer\PHPMailer;
     require 'vendor/autoload.php';
-    
+
     if(isset($_POST["submit"]) AND $user_info["error"] AND $user_file["error"]){
         //Create a new PHPMailer instance
         $mail = new PHPMailer;
