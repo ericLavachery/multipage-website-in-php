@@ -41,10 +41,12 @@
         $mail->msgHTML($user["message"]);
         //Replace the plain text body with one created manually
         $mail->AltBody = 'This is a plain-text message body';
-        // Va chercher le body
+        // Va chercher le joli body tout rose
         $mail->Body = $mailBody;
-        // spécifie qu'il est en html
-        $mail->IsHTML(true);
+        // spécifie le Format en fonction du format souhaité
+        if ($user["format"] == 'HTML') {
+            $mail->IsHTML(true);
+        }
         //Attach an image file
         $mail->addAttachment(__DIR__ . "/upload/" . $user["file"]);
         //send the message, check for errors
