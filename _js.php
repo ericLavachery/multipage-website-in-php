@@ -70,10 +70,12 @@ var ww = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
 console.log(ww);
 </script>
 
-<?php if (isset($okThen) AND $okThen == 'yes') {
-    echo('modal');
+<?php
+echo('=' . $okThen);
+if (isset($okThen) AND $okThen == 'yes') {
     echo('<script>$("#formConfirmModal").modal("show");</script>');
-} ?>
+}
+?>
 
 <script type="text/javascript">
 //Add this below content to your HTML page, or add the js file to your page at the very top to register service worker
