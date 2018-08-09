@@ -153,6 +153,14 @@ p:last-child { margin-bottom: 0; }
 	display: flex;
 	height: 600px;
 }
+.tm-section-log {
+	background-position: bottom right;
+	background-size: cover;
+	background-repeat: no-repeat;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+}
 
 .textcol-sec-1 {
     color: #00599a;
@@ -198,6 +206,9 @@ p:last-child { margin-bottom: 0; }
 }
 
 .tm-section ul {
+	padding-left: 20px;
+}
+.tm-section-log ul {
 	padding-left: 20px;
 }
 
