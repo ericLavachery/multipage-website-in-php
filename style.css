@@ -203,6 +203,8 @@ p:last-child { margin-bottom: 0; }
 
 .tm-footer {
     background-color: #DD0028;
+	/* background-color: #C80B2F; */
+	/* background-color: #E0193D; */
 	/* background-image: url(img/strip-bg-05.jpg); */
 	font-weight: 300;
 	display: -webkit-flex;
