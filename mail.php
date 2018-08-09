@@ -48,5 +48,17 @@
         } else {
             echo "Message sent!";
         }
+        $mail = new PHPMailer;
+        $mail->isSMTP();
+        $mail->addReplyTo($user["email"], ($user["titre"] . $user["nom"] ." ". $user["prenom"]));
+        $mail->addAddress($user["email"]);
+        $mail->setFrom($user["email"], "Formulaire Site Web");
+        $mail->Subject = $user["objet"];
+        $mail->msgHTML($user["message"]);
+        if (!$mail->send()) {
+            echo "Mailer Error: " . $mail->ErrorInfo;
+        } else {
+            echo "Message sent!";
+        }
     }
 ?>
