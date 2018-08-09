@@ -23,16 +23,16 @@ if(isset($_POST["submit"])){
     $message = check_input($_POST["message"]) ? filter_var($_POST["message"],FILTER_SANITIZE_STRING) : "";
     $validate_email = (filter_var($email,FILTER_VALIDATE_EMAIL) ? "" : $error_message);
     if(filter_var($email,FILTER_VALIDATE_EMAIL)){
-        $user=["titre" => $titre,
+        $user_info=["titre" => $titre,
         "nom" => $nom,
         "prenom" => $prenom,
         "email" => $email,
         "date" => date('H:i:s l j/m/Y'),
         "objet" => $objet,
         "format" => $format,
-        "message" => $message];
-        // print_r($user);
-        toConsole($user);
+        "message" => $message,
+        "error" => TRUE];
+        toConsole($user_info);
     }
 }
 
