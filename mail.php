@@ -1,7 +1,7 @@
 <?php
     use PHPMailer\PHPMailer\PHPMailer;
     require 'vendor/autoload.php';
-    
+
     if(isset($_POST["submit"]) AND $user_info["error"] AND $user_file["error"]){
         //Create a new PHPMailer instance
         $mail = new PHPMailer;
@@ -11,7 +11,7 @@
         // 0 = off (for production use)
         // 1 = client messages
         // 2 = client and server messages
-        $mail->SMTPDebug = 2;
+        $mail->SMTPDebug = 0;
         //Set the hostname of the mail server
         $mail->Host = 'ssl://smtp.gmail.com:465';
         // use
