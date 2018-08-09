@@ -67,21 +67,6 @@ require("_modal.php");
             <button type="submit" name="submit" class="btn submit-btn" id="submit">Envoyer</button>
         </div>
     </form>
-    
-    <!-- Modal -->
-    <div id="formConfirmModal" class="modal fade" role="dialog">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    <h4 class="modal-title"><?php if (isset($modalTitle)) {echo($modalTitle);} ?></h4>
-                </div>
-                <div class="modal-body">
-                    <p><?php if (isset($modalBody)) {echo($modalBody);} ?></p>
-                </div>
-            </div>
-        </div>
-    </div>
 
     <script>
     function validate(input){
