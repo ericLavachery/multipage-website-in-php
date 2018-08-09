@@ -53,8 +53,6 @@
         if (!$mail->send()) {
             echo "Mailer Error: " . $mail->ErrorInfo;
         } else {
-            echo "
-                <script>alert(\'Mail bien envoyé.\')</script>";
             toConsole('Message sent!');
             $okThen = 'yes';
         }
