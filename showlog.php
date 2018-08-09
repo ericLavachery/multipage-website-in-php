@@ -15,11 +15,15 @@ include '_head.php';
                     <h2 class="tm-section-header">Logs</h2>
                     <ul>
                         <?php
-                        $logJSON = file_get_contents("log.json");
-                        $logARRAY = json_decode($logJSON, TRUE);
-                        foreach ($logARRAY as $key => $value) {
-                            $newLine = '<li>' . $value["prenom"] . ' | ' . $value["objet"] . ' | ' . $value["date"] . ' | ' . $value["message"] . ' | ' . $value["date"] . '</li>';
-                            echo $newLine;
+                        if (file_exists('log.json')) {
+                            $logJSON = file_get_contents("log.json");
+                            $logARRAY = json_decode($logJSON, TRUE);
+                            foreach ($logARRAY as $key => $value) {
+                                $newLine = '<li>' . $value["prenom"] . ' | ' . $value["objet"] . ' | ' . $value["date"] . ' | ' . $value["message"] . ' | ' . $value["date"] . ' | ' . $value["format"] . '</li>';
+                                echo $newLine;
+                            }
+                        } else {
+                            echo("Il n'y a pas encore de fichier log...")
                         }
                         ?>
                     </ul>
