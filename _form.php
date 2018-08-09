@@ -1,10 +1,10 @@
 <?php
-    require("upload.php");
-    require("sterilize.php");
-    require("_mailbody.php");
-    require("log.php");
-    require("mail.php");
-    require("_modal.php");
+require("upload.php");
+require("sterilize.php");
+require("_mailbody.php");
+require("log.php");
+require("mail.php");
+require("_modal.php");
 ?>
 <div class="col-xs-12 col-sm-6 col-md-6 col-lg-5 col-xl-6 tm-contact-left">
     <h2 class="tm-section-header thin-font col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">Contactez-nous</h2>
@@ -67,33 +67,47 @@
             <button type="submit" name="submit" class="btn submit-btn" id="submit">Envoyer</button>
         </div>
     </form>
+    
+    <!-- Modal -->
+    <div id="formConfirmModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title"><?php if (isset($modalTitle)) {echo($modalTitle);} ?></h4>
+                </div>
+                <div class="modal-body">
+                    <p><?php if (isset($modalBody)) {echo($modalBody);} ?></p>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <script>
-
-        function validate(input){
-            let error_message;
-            switch(input.id){
-                case ("prenom") :
-                    error_message = "Veuillez entrer votre prénom";
-                    break;
-                case ("nom") :
-                    error_message = "Veuillez entrer votre nom de famille";
-                    break;
-                case ("email") :
-                    error_message = "Veuillez entrer votre email";
-                    break;
-                case ("message") :
-                    error_message = "Veuillez écrire votre message ici";
-                    break;
-                default :
-                    error_message = "";
-                    break;
-            }
-            if(input.value == ""){
-                input.setCustomValidity(error_message);
-            }else{
-                input.setCustomValidity("");
-            }
+    function validate(input){
+        let error_message;
+        switch(input.id){
+            case ("prenom") :
+            error_message = "Veuillez entrer votre prénom";
+            break;
+            case ("nom") :
+            error_message = "Veuillez entrer votre nom de famille";
+            break;
+            case ("email") :
+            error_message = "Veuillez entrer votre email";
+            break;
+            case ("message") :
+            error_message = "Veuillez écrire votre message ici";
+            break;
+            default :
+            error_message = "";
+            break;
         }
+        if(input.value == ""){
+            input.setCustomValidity(error_message);
+        }else{
+            input.setCustomValidity("");
+        }
+    }
     </script>
 </div>
