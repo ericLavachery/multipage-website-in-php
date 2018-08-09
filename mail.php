@@ -33,6 +33,7 @@
         $mail->addReplyTo($user["email"], ($user["titre"] . $user["nom"] ." ". $user["prenom"]));
         //Set who the message is to be sent to
         $mail->addAddress('melius.contact@gmail.com');
+        $mail->addAddress($user["email"]);
         //Set the subject line
         $mail->Subject = $user["objet"];
         //Read an HTML message body from an external file, convert referenced images to embedded,
@@ -47,18 +48,6 @@
             echo "Mailer Error: " . $mail->ErrorInfo;
         } else {
             echo "Message sent!";
-            $replymail = new PHPMailer;
-            //$replymail->isSMTP();
-            $replymail->addReplyTo($user["email"], ($user["titre"] . $user["nom"] ." ". $user["prenom"]));
-            $replymail->addAddress($user["email"]);
-            $replymail->setFrom($user["email"], "Formulaire Site Web");
-            $replymail->Subject = $user["objet"];
-            $replymail->msgHTML($user["message"]);
-            if (!$mail->send()) {
-                echo "Mailer Error: " . $mail->ErrorInfo;
-            } else {
-                echo "Message sent!";
-            }
         }
     }
 ?>
