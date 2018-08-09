@@ -1,6 +1,8 @@
 <?php
 if(isset($_POST["submit"])){
+    echo('set');
     if ($okThen == 'yes'){
+        echo('okThen');
         if ($user['objet'] == 'info') {
             $modalTitle = "Votre demande d'information à bien été envoyée";
         } else {
