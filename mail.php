@@ -33,7 +33,7 @@
         $mail->addReplyTo($user["email"], ($user["titre"] . $user["nom"] ." ". $user["prenom"]));
         //Set who the message is to be sent to
         $mail->addAddress('melius.contact@gmail.com');
-        $mail->AddCC($user["email"]);
+        //$mail->AddCC($user["email"]);
         //Set the subject line
         $mail->Subject = $user["objet"];
         //Read an HTML message body from an external file, convert referenced images to embedded,
@@ -56,5 +56,10 @@
             toConsole('Message sent!');
             $okThen = 'yes';
         }
+        $mail->ClearAddresses();
+
+        $mail->AddAddress($user["email"]);
+        $mail->Body = "message2";
+        $mail->Send();
     }
 ?>
