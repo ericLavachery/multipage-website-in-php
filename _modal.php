@@ -10,7 +10,7 @@
         <script>
             document.addEventListener("DOMContentLoaded", function(event) {
                 $("#formConfirmModal").modal();
-            }
+            })
         </script>');
     }
 ?>
