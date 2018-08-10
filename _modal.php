@@ -8,7 +8,7 @@
         $modalBody = $user['prenom'] . ' ' . $user['nom'] . '<br>Email = ' . $user['email'] . '<br>' . $user['message'];
         echo('
         <script type="text/javascript">
-            $("#formConfirmModal").modal("show");
+            document.getElementById("formConfirmModal").setAttribute("class","show");
         </script>');
     }
 ?>
