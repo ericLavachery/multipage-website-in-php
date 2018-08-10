@@ -65,7 +65,7 @@ require("mail.php");
             </div>
             <button type="submit" name="submit" class="btn submit-btn" id="submit">Envoyer</button>
         </div>
-        <?php require("_modal.php");?>
+        <?php include("_modal.php");?>
     </form>
 
     <script>
