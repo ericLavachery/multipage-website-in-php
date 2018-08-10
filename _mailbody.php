@@ -14,8 +14,11 @@ if(isset($_POST["submit"])){
         } else {
             $mailInfos = "Votre inscription à bien été envoyée";
         }
-        $mailInfos = ' | ' . $mailInfos . ' ' . $user_info["prenom"] . ' ' . $user_info["nom"] . ' | Format de réponse souhaité = ' . $user_info["format"] . ' | Message = ' . $user_info["message"] . ' |
-         ' . $user_info["date"];
+        $mailInfos = $mailInfos . '
+        | ' . $user_info["prenom"] . ' ' . $user_info["nom"] . '
+        | Format de réponse souhaité = ' . $user_info["format"] . '
+        | Message = ' . $user_info["message"] . '
+        | ' . $user_info["date"];
         $mailBody = $mailInfos;
     }
 }
