@@ -28,7 +28,7 @@
 <script type="text/javascript">
     function message_send(){
         let okThen = <?php echo($okThen); ?>;
-        if(okThen == "1"){
+        if(okThen){
             $('#formConfirmModal').modal('show');
         }
     }
