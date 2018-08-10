@@ -7,5 +7,3 @@ composer.lock
 composer.phar
 log.php
 secret.php
-$user_mail mail.php
-$user_password mail.php
