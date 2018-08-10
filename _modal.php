@@ -24,9 +24,6 @@
             <div class="modal-body">
                 <p><?php if (isset($modalBody)) {echo($modalBody);} ?></p>
             </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Fermer</button>
-            </div>
         </div>
     </div>
 </div>
