@@ -48,6 +48,10 @@ p:last-child { margin-bottom: 0; }
 .tm-footer a {
 	color: #fff;
 }
+.tm-footer-text a:hover {
+	color: #FFFF00;
+	text-decoration: underline;
+}
 .tm-container {
 	background-color: white;
 	padding: 30px 45px;
