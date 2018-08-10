@@ -6,6 +6,10 @@
             $modalTitle = "Votre inscription à bien été envoyée";
         }
         $modalBody = $user['prenom'] . ' ' . $user['nom'] . '<br>Email = ' . $user['email'] . '<br>' . $user['message'];
+        echo("
+        <script type='text/javascript'>
+            $('#formConfirmModal').modal('show');
+        </script>");
     }
 ?>
 <div id="formConfirmModal" class="modal">
@@ -24,12 +28,3 @@
         </div>
     </div>
 </div>
-
-<script type="text/javascript">
-    function message_send(){
-        let okThen = <?php echo($okThen); ?>;
-        if(okThen){
-            $('#formConfirmModal').modal('show');
-        }
-    }
-</script>
