@@ -190,12 +190,28 @@ p:last-child { margin-bottom: 0; }
 	color: #882a85;
 	font-weight: 400;
 }
-#tm-section-1 {	background-image: url(img/strip-bg-01.jpg); } /* SKY */
-#tm-section-2 {	background-image: url(img/strip-bg-02.jpg); } /* YELLOW */
-#tm-section-3 {	background-image: url(img/strip-bg-03.jpg); } /* GREY */
-#tm-section-4 {	background-image: url(img/strip-bg-04.jpg); } /* CYAN */
-#tm-section-5 {	background-image: url(img/strip-bg-05.jpg); } /* GREEN */
-#tm-section-6 {	background-image: url(img/strip-bg-06.jpg); } /* PURPLE */
+#tm-section-1 {
+	background-image: url(img/strip-bg-00.png);
+	background-position: left;
+} /* SKY */
+#tm-section-2 {
+	background-image: url(img/strip-bg-02.jpg);
+	background-position: left;
+} /* YELLOW */
+#tm-section-3 {
+	background-image: url(img/strip-bg-03.jpg);
+	background-position: left;
+} /* GREY */
+#tm-section-4 {
+	background-image: url(img/strip-bg-04.jpg);
+	background-position: left;
+} /* CYAN */
+#tm-section-5 {
+	background-image: url(img/strip-bg-05.jpg);
+} /* GREEN */
+#tm-section-6 {
+	background-image: url(img/strip-bg-06.jpg);
+} /* PURPLE */
 
 .modal-title {
 	color: #DD0028;
