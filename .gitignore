@@ -1,3 +1,11 @@
-/stock/*
-/upload/*
-/log.json
+stock*
+upload*
+log.json
+vendor*
+composer.json
+composer.lock
+composer.phar
+log.php
+secret.php
+$user_mail mail.php
+$user_password mail.php
