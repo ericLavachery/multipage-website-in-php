@@ -8,10 +8,6 @@
         $modalBody = $user['prenom'] . ' ' . $user['nom'] . '<br>Email = ' . $user['email'] . '<br>' . $user['message'];
     }
 ?>
-<script type='text/javascript'>
-    if(<?php $okThen ?>)
-    $('#formConfirmModal').modal('show');
-</script>;
 <!-- Modal -->
 <!--<div id="formConfirmModal" class="modal fade" role="dialog">
     <div class="modal-dialog">
@@ -42,3 +38,9 @@
         </div>
     </div>
 </div>
+<script type='text/javascript'>
+    function message_sent(){
+        if(<?php $okThen ?>)
+        $('#formConfirmModal').modal('show');
+    }
+</script>;
