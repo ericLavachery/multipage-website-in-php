@@ -9,7 +9,7 @@
         echo('
         <script>
             document.addEventListener("DOMContentLoaded", function(event) {
-                $("#formConfirmModal").modal("show");
+                $("#formConfirmModal").modal({backdrop: true});
             })
         </script>');
     }
