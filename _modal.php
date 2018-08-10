@@ -14,7 +14,7 @@
         </script>');
     }
 ?>
-<div id="formConfirmModal" class="modal">
+<div id="formConfirmModal" class="modal fade">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
@@ -23,9 +23,6 @@
             </div>
             <div class="modal-body">
                 <p><?php if (isset($modalBody)) {echo($modalBody);} ?></p>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Fermer</button>
             </div>
         </div>
     </div>
