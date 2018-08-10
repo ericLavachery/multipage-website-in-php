@@ -1,6 +1,6 @@
 <?php
     $message_send = "
-    <div id='formConfirmModal' class='modal fade'>
+    <div id='formConfirmModal' class='modal'>
         <div class='modal-dialog'>
             <div class='modal-content'>
                 <div class='modal-header'>
