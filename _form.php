@@ -4,7 +4,6 @@ require("sterilize.php");
 require("_mailbody.php");
 require("log.php");
 require("mail.php");
-require("_modal.php");
 ?>
 <div class="col-xs-12 col-sm-6 col-md-6 col-lg-5 col-xl-6 tm-contact-left">
     <h2 class="tm-section-header thin-font col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">Contactez-nous</h2>
@@ -66,6 +65,7 @@ require("_modal.php");
             </div>
             <button type="submit" name="submit" class="btn submit-btn" id="submit">Envoyer</button>
         </div>
+        <?php require("_modal.php");?>
     </form>
 
     <script>
