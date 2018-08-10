@@ -6,9 +6,12 @@
             $modalTitle = "Votre inscription à bien été envoyée";
         }
         $modalBody = $user['prenom'] . ' ' . $user['nom'] . '<br>Email = ' . $user['email'] . '<br>' . $user['message'];
-        echo("$('#formConfirmModal').modal('show');");
     }
 ?>
+<script type='text/javascript'>
+    if(<?php $okThen ?>)
+    $('#formConfirmModal').modal('show');
+</script>;
 <!-- Modal -->
 <!--<div id="formConfirmModal" class="modal fade" role="dialog">
     <div class="modal-dialog">
