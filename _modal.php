@@ -9,12 +9,12 @@
         echo('
         <script>
             document.addEventListener("DOMContentLoaded", function(event) {
-                $("#formConfirmModal").modal();
+                $("#formConfirmModal").modal("show");
             })
         </script>');
     }
 ?>
-<div id="formConfirmModal" class="modal">
+<div id="formConfirmModal" class="modal fade">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
