@@ -7,7 +7,7 @@ if(isset($_POST["submit"])){
             $modalTitle = "Votre inscription à bien été envoyée";
         }
         $modalBody = $user['prenom'] . ' ' . $user['nom'] . '<br>Email = ' . $user['email'] . '<br>' . $user['message'];
-        echo('<script>$("#formConfirmModal").modal("show");</script>');
+        //echo('<script>$("#formConfirmModal").modal("show");</script>');
     }
 }
 ?>
