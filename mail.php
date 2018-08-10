@@ -39,14 +39,19 @@
         $mail->Subject = $user["objet"];
         //Read an HTML message body from an external file, convert referenced images to embedded,
         //convert HTML into a basic plain-text alternative body
-        $mail->msgHTML($user["message"]);
+        // $mail->msgHTML($user["message"]);
         //Replace the plain text body with one created manually
-        $mail->AltBody = 'This is a plain-text message body';
-        // Va chercher le joli body tout rose
-        $mail->Body = $mailBody;
+        // $mail->AltBody = 'This is a plain-text message body';
         // spécifie le Format en fonction du format souhaité
         if ($user["format"] == 'HTML') {
             $mail->IsHTML(true);
+            // Va chercher le joli body tout rose
+            $mail->Body = $mailBody;
+        } else {
+            $mail->IsHTML(false);
+            // Va chercher le joli body tout rose
+            $mail->Body = $mailBody;
+            // $mail->Body = file_get_contents($mailBodyTextFile);
         }
         //Attach an image file
         $mail->addAttachment(__DIR__ . "/upload/" . $user["file"]);
