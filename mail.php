@@ -1,7 +1,6 @@
 <?php
     use PHPMailer\PHPMailer\PHPMailer;
     require 'vendor/autoload.php';
-    require("secret.php");
 
     if(isset($_POST["submit"]) AND $user_info["error"] AND $user_file["error"]){
         //Create a new PHPMailer instance
@@ -25,15 +24,15 @@
         //Whether to use SMTP authentication
         $mail->SMTPAuth = true;
         //Username to use for SMTP authentication - use full email address for gmail
-        $mail->Username = $user_mail;
+        $mail->Username = getenv("user_mail");
         //Password to use for SMTP authentication
-        $mail->Password = $user_password;
+        $mail->Password = getenv("user_password");
         //Set who the message is to be sent from
-        $mail->setFrom("melius.contact@gmail.com", "Melius");
+        $mail->setFrom(getenv("user_mail"), "Melius");
         //Set an alternative reply-to address
         $mail->addReplyTo($user["email"], ($user["titre"] . $user["nom"] ." ". $user["prenom"]));
         //Set who the message is to be sent to
-        $mail->addAddress('melius.contact@gmail.com');
+        $mail->addAddress(getenv("user_mail");
         $mail->addAddress($user["email"]);
         //$mail->AddCC($user["email"]);
         //Set the subject line
