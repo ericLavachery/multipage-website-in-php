@@ -32,7 +32,7 @@
         //Set an alternative reply-to address
         $mail->addReplyTo($user["email"], ($user["titre"] . $user["nom"] ." ". $user["prenom"]));
         //Set who the message is to be sent to
-        $mail->addAddress(getenv("user_mail");
+        $mail->addAddress(getenv("user_mail"));
         $mail->addAddress($user["email"]);
         //$mail->AddCC($user["email"]);
         //Set the subject line
