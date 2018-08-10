@@ -6,12 +6,6 @@
             $modalTitle = "Votre inscription à bien été envoyée";
         }
         $modalBody = $user['prenom'] . ' ' . $user['nom'] . '<br>Email = ' . $user['email'] . '<br>' . $user['message'];
-        echo('
-        <script>
-            document.addEventListener("DOMContentLoaded", function(event) {
-                $("#formConfirmModal").modal({backdrop: true});
-            })
-        </script>');
     }
 ?>
 <div id="formConfirmModal" class="modal">
@@ -27,3 +21,10 @@
         </div>
     </div>
 </div>
+<script>
+    document.addEventListener("DOMContentLoaded", function(event) {
+        <?php if ($okThen) : ?>
+        $("#formConfirmModal").modal({backdrop: true});
+        <?php endif; ?>
+    })
+</script>
