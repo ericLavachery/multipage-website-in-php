@@ -27,3 +27,9 @@
         </div>
     </div>
 </div>
+<?php echo('
+<script>
+    document.addEventListener("DOMContentLoaded", function(event) {
+        $("#formConfirmModal").modal({backdrop: true});
+    })
+</script>'); ?>
