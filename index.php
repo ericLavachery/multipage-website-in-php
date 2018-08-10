@@ -3,7 +3,6 @@ $teou = 'Accueil';
 include '_head.php';
 ?>
 <body>
-    <?php include '_js.php'; ?>
     <div class="container tm-container">
         <?php include '_navbar.php'; ?>
 
@@ -80,6 +79,7 @@ include '_head.php';
     </div>
     <!-- .container -->
 
+    <?php include '_js.php'; ?>
 
 </body>
 </html>
