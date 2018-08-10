@@ -63,9 +63,9 @@ require("mail.php");
                     <input type="radio" name="format" id="TXT" value="TXT"<?php if (isset($format) && $format == 'TXT') {echo(' checked');} ?>> <label for="TXT">Texte &nbsp;</label>
                 </nobr>
             </div>
-            <button type="submit" name="submit" class="btn submit-btn" id="submit">Envoyer</button>
+            <button type="submit" name="submit" class="btn submit-btn" id="submit" >Envoyer</button>
         </div>
-        <?php include("_modal.php");?>
+        <?php require("_modal.php");?>
     </form>
 
     <script>
