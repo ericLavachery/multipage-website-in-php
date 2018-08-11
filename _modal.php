@@ -23,8 +23,8 @@
 </div>
 <?php if ($okThen) : ?>
 <script>
-    // document.addEventListener("DOMContentLoaded", function(event) {
+    document.addEventListener("DOMContentLoaded", function(event) {
         $("#formConfirmModal").modal({backdrop: true});
-    // })
+    })
 </script>
 <?php endif; ?>
