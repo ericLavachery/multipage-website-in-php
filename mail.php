@@ -52,7 +52,9 @@
         $mail->addAttachment(__DIR__ . "/upload/" . $user["file"]);
         //send the message, check for errors
         if (!$mail->send()) {
-            echo "Mailer Error: " . $mail->ErrorInfo;
+            $mailError = "Mailer Error: " . $mail->ErrorInfo;
+            toConsole($mailError);
+            $okThen = TRUE;
         } else {
             toConsole('Message sent!');
             $okThen = TRUE;

@@ -21,10 +21,10 @@
         </div>
     </div>
 </div>
+<?php if ($okThen) : ?>
 <script>
-    document.addEventListener("DOMContentLoaded", function(event) {
-        <?php if ($okThen) : ?>
+    // document.addEventListener("DOMContentLoaded", function(event) {
         $("#formConfirmModal").modal({backdrop: true});
-        <?php endif; ?>
-    })
+    // })
 </script>
+<?php endif; ?>
