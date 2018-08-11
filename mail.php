@@ -29,11 +29,11 @@
         //Password to use for SMTP authentication
         $mail->Password = $user_password;
         //Set who the message is to be sent from
-        $mail->setFrom("melius.contact@gmail.com", "Melius");
+        $mail->setFrom("becode.melius@gmail.com", "Melius");
         //Set an alternative reply-to address
         $mail->addReplyTo($user["email"], ($user["titre"] . $user["nom"] ." ". $user["prenom"]));
         //Set who the message is to be sent to
-        $mail->addAddress('melius.contact@gmail.com');
+        $mail->addAddress('becode.melius@gmail.com');
         $mail->addAddress($user["email"]);
         //$mail->AddCC($user["email"]);
         //Set the subject line
