@@ -12,7 +12,7 @@
         // 0 = off (for production use)
         // 1 = client messages
         // 2 = client and server messages
-        $mail->SMTPDebug = 0;
+        $mail->SMTPDebug = 2;
         //Set the hostname of the mail server
         $mail->Host = 'ssl://smtp.gmail.com:465';
         // use
